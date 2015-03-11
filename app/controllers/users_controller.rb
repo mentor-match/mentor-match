@@ -9,6 +9,9 @@ class UsersController < ApplicationController
       redirect_to user_path(current_user)
     else
       @user = current_user
+      @industries = Industry.all
+      @avails = Availability.all
+      @locations = Location.all
     end
   end
 
@@ -33,12 +36,16 @@ class UsersController < ApplicationController
 
   def update
     @user = current_user
-    if @user.authenticate(params[:user][:current_password])
-      @user.update(password_params)
-      redirect_to user_messages_url(@user)
-    else
-      render :edit
-    end
+   binding.pry
+
+
+    @user.update(profile_params)
+    # if @user.authenticate(params[:user][:current_password])
+    #   @user.update(password_params)
+    #   redirect_to user_messages_url(@user)
+    # else
+    #   render :edit
+    # end
   end
 
 
@@ -49,9 +56,9 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 
-  def password_params
-    params.require(:user).permit(:password, :password_confirmation)
-  end
+  # def profile_params
+  #   params.require(:user).permit(:locations, :availabilities, :mentor_type, :bio, :industries[], :name, :title, :email, :years_experience, :fun_fact)
+  # end
 
   def user_is_current_user
     redirect_to new_session_path

@@ -3,8 +3,9 @@ class User < ActiveRecord::Base
 
   validates :name, :email, presence: true
 
- belongs_to :industry
+ has_many :industries
  belongs_to :availability
+
 
 
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
