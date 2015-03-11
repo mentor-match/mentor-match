@@ -10,22 +10,29 @@
 	<% if current_user %>
 
     <nav class="logged-in clearfix">
+
       <div class="logo">
         MentorMatch
       </div>
+
       <ul class="clearfix">
         <li>
           <%= button_to "Log Out", session_url, method: "delete" %>
         </li>
+
         <li>
           <%= link_to "Change Password", edit_user_url(current_user) %>
         </li>
         
       </ul>
     </nav>
+
   <% end %>
   
 
  <%= yield %>
+
+<pre><%= session.to_hash.to_yaml %></pre>
+ 
 </body>
 </html>

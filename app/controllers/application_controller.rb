@@ -7,12 +7,15 @@ class ApplicationController < ActionController::Base
   def index
 
   end
+
   def current_user
     return nil unless session[:session_token]
     @current_user ||= User.find_by(session_token: session[:session_token])
   end
 
+
   private
+
 
   def login!(user)
     session[:session_token] = make_token
@@ -22,7 +25,7 @@ class ApplicationController < ActionController::Base
 
   def logout!
     current_user.update(session_token: nil)
-    session[:session_token] = make_token
+    reset_session
   end
 
   def make_token
@@ -30,6 +33,8 @@ class ApplicationController < ActionController::Base
   end
 
   def require_current_user
+    binding.pry
     redirect_to new_session_url unless current_user
   end
+
 end

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  
+  root 'users#welcome'
+
   resources :messages
- # root 'users#index'
- resource :session, only: [:new, :create, :destroy]
+  
+  resource :session, only: [:new, :create, :destroy]
 
   resources :industries
 
