@@ -9,6 +9,8 @@ class UsersController < ApplicationController
       redirect_to user_path(current_user)
     else
       @user = current_user
+      @industries = Industry.all
+   
     end
   end
 
