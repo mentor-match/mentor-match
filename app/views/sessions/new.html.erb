@@ -1,0 +1,10 @@
+<h1>Log in to MentorMatch!</h1>
+
+  <%= form_for @user, as: :session, url: session_url do |f| %>
+  <%= f.text_field :email, placeholder: "your email" %>
+    <br/>
+  <%= f.password_field :password, placeholder: "password" %>
+    <br/>
+
+    <%= f.submit "Log in" %>
+  <% end %>
