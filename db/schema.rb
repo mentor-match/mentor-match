@@ -11,35 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310231247) do
+ActiveRecord::Schema.define(version: 20150311212309) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "availabilities", force: :cascade do |t|
-    t.string   "monthly"
-    t.string   "quartely"
-    t.string   "yearly"
-    t.string   "biannually"
-    t.string   "unavailable"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
   end
 
   create_table "industries", force: :cascade do |t|
-    t.string   "tech"
-    t.string   "information_technology"
-    t.string   "design"
-    t.string   "marketing"
-    t.string   "business"
-    t.string   "public_relations"
-    t.string   "media"
-    t.string   "finance"
-    t.string   "accounting"
-    t.string   "human_resources"
-    t.string   "advertising"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
   end
 
   create_table "messages", force: :cascade do |t|
