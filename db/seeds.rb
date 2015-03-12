@@ -63,4 +63,25 @@ end
 ].each do |i|
   Availability.create(i)
 end
+
+
+[ {
+    city: 'Boston',
+  },
+  {
+    city: 'New York',
+  },
+   {
+    city: "San Francisco",
+  },
+   {
+   city: "Philadephia",
+  },
+   {
+    city: "Los Angeles",
+  }
+
+].each do |i|
+  Location.create(i)
+end
   
