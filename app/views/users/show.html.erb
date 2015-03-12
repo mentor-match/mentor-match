@@ -36,7 +36,7 @@
 	<% @industries.each do |i| %>
 
 		<label class="user_industry" for="user_industry">
-		<input class="user_industry" name="user[industries][]" type="checkbox" value="<%= i.id %>">
+		<input class="user_industry" name="user[industry_id][]" type="checkbox" value="<%= i.id %>">
 			<%= i.name %>
 		</input>
 	<br>
@@ -44,7 +44,7 @@
 	<% end %>
 	<br>
 	<label>Availability: </label>
-	<select for="availability" name="user[availabilities]">
+	<select for="availability" name="user[availability_id]">
 		<% @avails.each do |i| %>
 		   <option  class="user_availability" type="type" value="<%= i.id %>">
 		   	<%= i.name %>
@@ -55,7 +55,7 @@
 	<br>	
 
 	<label>Location: </label><br>
-	<select for="user_location" name="user[locations]">
+	<select for="user_location" name="user[job_location_id]">
 		<%  @locations.each do |l| %>
 
 			<option  class="user_availability" type="type" value="<%= l.id %>">
