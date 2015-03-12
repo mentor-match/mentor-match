@@ -27192,3 +27192,194 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-8092d52a5eeaf6720b62c6d175b45a35.js?body=1" for ::1 at 2015-03-12 14:30:23 -0400
+
+
+Started GET "/" for ::1 at 2015-03-12 14:49:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Ikv6b1D9uN_AYH23D22pMQ"]]
+Completed 200 OK in 219ms (Views: 209.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:48 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-12 14:49:55 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wUEQky4PyDI6JkY/qls6Z1/vQaCuG7/IvDhXwlwB3H1IocvSw3uWxtcGJV+M1ONbb+MXSYLtCnWnOZgKHk8rgg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Ikv6b1D9uN_AYH23D22pMQ"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-12 18:49:55.930794"], ["id", 1]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-12 14:49:55 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:56 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-12 14:49:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HHnNkLosJpLEDT3s3f9xxmBoFENjfeC3FZNAu//L+QEopTeLgPA7HdSYke73YfMvAKmrDSHE1oUZaAbZsJ2bkw==", "session"=>{"email"=>"petsofia@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "petsofia@gmail.com"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "CPtCEnJfdC5-A4RuIsp99Q"], ["updated_at", "2015-03-12 18:49:57.987303"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 72ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-12 14:49:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "CPtCEnJfdC5-A4RuIsp99Q"]]
+  [1m[35mIndustry Load (0.3ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mAvailability Load (0.3ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 94ms (Views: 86.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-12 14:49:58 -0400

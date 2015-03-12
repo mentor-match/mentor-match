@@ -41,6 +41,8 @@ class UsersController < ApplicationController
     industries_array = params["user"]["industry_id"]
     @user.update(industry_id: industries_array ) 
     @user.update(profile_params)
+
+    redirect_to new_filters_url
   end
 
 
