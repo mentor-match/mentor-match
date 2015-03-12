@@ -37,36 +37,10 @@ class UsersController < ApplicationController
   end
 
   def update
-  @user = current_user
-
-
-  
- 
- industries_array = params["user"]["industry_id"]
-
-#   ind = industries_array.map do |x| 
-#      x.to_i
-#     end
-    
-# binding.pry
-#    ind.each do |x|
-  @user.update(industry_id: industries_array ) 
-#   end
-   
-   @user.update(profile_params)
-   # .each do |industry, ty)pe|
-        
-         
-   #      puts type["industry"]
-   #    binding.pry
-   #    end
-
-    # if @user.authenticate(params[:user][:current_password])
-    #   @user.update(password_params)
-    #   redirect_to user_messages_url(@user)
-    # else
-    #   render :edit
-    # end
+    @user = current_user
+    industries_array = params["user"]["industry_id"]
+    @user.update(industry_id: industries_array ) 
+    @user.update(profile_params)
   end
 
 

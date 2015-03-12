@@ -12,7 +12,13 @@ Rails.application.routes.draw do
 
   resources :availabilities
 
-  resources :users
+  resources :users do
+    resources :filters, only: [:new, :create, :index]
+
+  end
+  # '/users/:id/filter' =>  'users#new_filter'
+  #  '/users/:id/results' => 'users#show_filter'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
