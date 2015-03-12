@@ -1,8 +1,9 @@
 class User < ActiveRecord::Base
-  has_secure_password
+ has_secure_password
 
-  validates :name, :email, presence: true
+ validates :name, :email, presence: true
 
+ serialize :industries
  has_many :industries
  belongs_to :availability
 

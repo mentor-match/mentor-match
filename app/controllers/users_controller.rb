@@ -37,18 +37,29 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = current_user
+  @user = current_user
 
 
+  
+ 
+ industries_array = params["user"]["industry_id"]
 
-   profile_params
-
-   .each do |industry, type|
+#   ind = industries_array.map do |x| 
+#      x.to_i
+#     end
+    
+# binding.pry
+#    ind.each do |x|
+  @user.update(industry_id: industries_array ) 
+#   end
+   
+   @user.update(profile_params)
+   # .each do |industry, ty)pe|
         
-         binding.pry
-        puts type["industry"]
-      binding.pry
-      end
+         
+   #      puts type["industry"]
+   #    binding.pry
+   #    end
 
     # if @user.authenticate(params[:user][:current_password])
     #   @user.update(password_params)
@@ -67,7 +78,7 @@ class UsersController < ApplicationController
   end
 
   def profile_params
-    params.require(:user).permit(:locations, :availabilities, :mentor_type, :bio, :industries[], :name, :title, :email, :years_experience, :fun_fact)
+    params.require(:user).permit(:job_location_id, :availability_id, :mentor_type, :bio, :name, :title, :email, :years_experience, :fun_fact)
   end
 
   def user_is_current_user
