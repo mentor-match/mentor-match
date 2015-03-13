@@ -30702,3 +30702,1322 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-c58dbcd27700e3f6b952b55c04741ce8.js?body=1" for ::1 at 2015-03-13 12:39:09 -0400
+
+
+Started GET "/" for ::1 at 2015-03-13 13:58:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (18.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (41.2ms)
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150310203812)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying NOT NULL, "title" character varying, "email" character varying NOT NULL, "years_experience" integer, "mentor_type" integer NOT NULL, "job_location_id" integer, "home_origin" character varying, "password_digest" character varying NOT NULL, "session_token" character varying, "bio" text, "fun_fact" text, "avatar_file_name" character varying, "avatar_content_type" character varying, "avatar_file_size" integer, "avatar_updated_at" timestamp, "availability_id" integer, "industry_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310203812"]]
+  [1m[36m (11.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAvailabilities (20150310211109)
+  [1m[35m (5.8ms)[0m  BEGIN
+  [1m[36m (13.8ms)[0m  [1mCREATE TABLE "availabilities" ("id" serial primary key, "monthly" character varying, "quartely" character varying, "yearly" character varying, "biannually" character varying, "unavailable" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310211109"]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateIndustries (20150310211402)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "industries" ("id" serial primary key, "tech" character varying, "information_technology" character varying, "design" character varying, "marketing" character varying, "business" character varying, "public_relations" character varying, "media" character varying, "finance" character varying, "accounting" character varying, "human_resources" character varying, "advertising" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310211402"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSessions (20150310213845)
+  [1m[35m (6.3ms)[0m  BEGIN
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "sessions" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310213845"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMessages (20150310214844)
+  [1m[35m (5.9ms)[0m  BEGIN
+  [1m[36m (13.6ms)[0m  [1mCREATE TABLE "messages" ("id" serial primary key, "sender_id" integer NOT NULL, "recipient_id" integer NOT NULL, "subject" character varying, "content" text NOT NULL, "read" boolean DEFAULT 'f', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310214844"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddUniqueIndexToEmail (20150310215701)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (7.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310215701"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveNullFalseFromMentorInUsers (20150310231247)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ALTER "mentor_type" DROP NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150310231247"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeIndustryColumn (20150311203007)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150311203007"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Migrating to RemoveColumnsFromIndustries (20150311210244)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311210244"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnTech (20150311211106)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "tech"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211106"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnIt (20150311211206)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "information_technology"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211206"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnDesign (20150311211243)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "design"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211243"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnMarketing (20150311211316)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "industries" DROP "marketing"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211316"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnBusiness (20150311211404)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "business"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211404"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnPr (20150311211424)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "industries" DROP "public_relations"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211424"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnMedia (20150311211446)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "industries" DROP "media"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211446"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnFinance (20150311211507)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "finance"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211507"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnAccounting (20150311211528)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "industries" DROP "accounting"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211528"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnHr (20150311211544)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "human_resources"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211544"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnAdvertising (20150311211608)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "industries" DROP "advertising"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211608"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnFromAvailabilitiesMonthly (20150311211704)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "availabilities" DROP "monthly"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211704"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnFromAvailabilitiesQaurtely (20150311211737)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "availabilities" DROP "quartely"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211737"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnFromAvailabilitiesAnnually (20150311211904)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "availabilities" DROP "yearly"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311211904"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnFromAvailabilitiesBiAnnually (20150311212001)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "availabilities" DROP "biannually"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311212001"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveColumnFromAvailabilitiesUa (20150311212042)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "availabilities" DROP "unavailable"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311212042"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnToIndustries (20150311212211)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "industries" ADD "name" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311212211"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnToAvailabilities (20150311212309)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "availabilities" ADD "name" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311212309"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLocations (20150311222415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (14.1ms)[0m  [1mCREATE TABLE "locations" ("id" serial primary key, "city" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150311222415"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeIndustriesDataType (20150312145528)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "industry_id" TYPE text[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150312145528"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to DeleteIndustriesTable (20150313154136)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "industries"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150313154136"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddIndustryTable (20150313154449)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "industries" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150313154449"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to DropUSersTable (20150313154809)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150313154809"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddUsersTable (20150313154849)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying NOT NULL, "title" character varying, "email" character varying NOT NULL, "years_experience" integer, "mentor_type" integer, "job_location_id" integer, "home_origin" character varying, "password_digest" character varying NOT NULL, "session_token" character varying, "bio" text, "fun_fact" text, "avatar_file_name" character varying, "avatar_content_type" character varying, "avatar_file_size" integer, "avatar_updated_at" timestamp, "availability_id" integer, "industry_id" integer, "skill_id" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150313154849"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSkills (20150313155248)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "skills" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150313155248"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'availabilities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'industries'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'locations'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sessions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Advertising"], ["created_at", "2015-03-13 17:59:59.936832"], ["updated_at", "2015-03-13 17:59:59.936832"]]
+  [1m[35m (5.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Accounting"], ["created_at", "2015-03-13 17:59:59.953091"], ["updated_at", "2015-03-13 17:59:59.953091"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Business"], ["created_at", "2015-03-13 17:59:59.955430"], ["updated_at", "2015-03-13 17:59:59.955430"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Information_technology"], ["created_at", "2015-03-13 17:59:59.957007"], ["updated_at", "2015-03-13 17:59:59.957007"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tech"], ["created_at", "2015-03-13 17:59:59.958421"], ["updated_at", "2015-03-13 17:59:59.958421"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Public_relations"], ["created_at", "2015-03-13 17:59:59.959797"], ["updated_at", "2015-03-13 17:59:59.959797"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Media"], ["created_at", "2015-03-13 17:59:59.961204"], ["updated_at", "2015-03-13 17:59:59.961204"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Finance"], ["created_at", "2015-03-13 17:59:59.962827"], ["updated_at", "2015-03-13 17:59:59.962827"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Human_resources"], ["created_at", "2015-03-13 17:59:59.964218"], ["updated_at", "2015-03-13 17:59:59.964218"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Marketing"], ["created_at", "2015-03-13 17:59:59.965534"], ["updated_at", "2015-03-13 17:59:59.965534"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Annually"], ["created_at", "2015-03-13 17:59:59.971097"], ["updated_at", "2015-03-13 17:59:59.971097"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Monthly"], ["created_at", "2015-03-13 17:59:59.974405"], ["updated_at", "2015-03-13 17:59:59.974405"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Quarterly"], ["created_at", "2015-03-13 17:59:59.977401"], ["updated_at", "2015-03-13 17:59:59.977401"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Biannually"], ["created_at", "2015-03-13 17:59:59.979341"], ["updated_at", "2015-03-13 17:59:59.979341"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Unavailable"], ["created_at", "2015-03-13 17:59:59.981027"], ["updated_at", "2015-03-13 17:59:59.981027"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["city", "Boston"], ["created_at", "2015-03-13 17:59:59.987433"], ["updated_at", "2015-03-13 17:59:59.987433"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "New York"], ["created_at", "2015-03-13 17:59:59.989510"], ["updated_at", "2015-03-13 17:59:59.989510"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["city", "San Francisco"], ["created_at", "2015-03-13 17:59:59.991056"], ["updated_at", "2015-03-13 17:59:59.991056"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Philadephia"], ["created_at", "2015-03-13 17:59:59.992521"], ["updated_at", "2015-03-13 17:59:59.992521"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["city", "Los Angeles"], ["created_at", "2015-03-13 17:59:59.993947"], ["updated_at", "2015-03-13 17:59:59.993947"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Leadership"], ["created_at", "2015-03-13 17:59:59.999307"], ["updated_at", "2015-03-13 17:59:59.999307"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Team Management"], ["created_at", "2015-03-13 18:00:00.001581"], ["updated_at", "2015-03-13 18:00:00.001581"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Strategy Tools"], ["created_at", "2015-03-13 18:00:00.003231"], ["updated_at", "2015-03-13 18:00:00.003231"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Problem Solving"], ["created_at", "2015-03-13 18:00:00.005551"], ["updated_at", "2015-03-13 18:00:00.005551"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Decision Making"], ["created_at", "2015-03-13 18:00:00.015422"], ["updated_at", "2015-03-13 18:00:00.015422"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Project Management"], ["created_at", "2015-03-13 18:00:00.023328"], ["updated_at", "2015-03-13 18:00:00.023328"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Time Management"], ["created_at", "2015-03-13 18:00:00.031307"], ["updated_at", "2015-03-13 18:00:00.031307"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Stress Management"], ["created_at", "2015-03-13 18:00:00.033670"], ["updated_at", "2015-03-13 18:00:00.033670"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Communication"], ["created_at", "2015-03-13 18:00:00.035498"], ["updated_at", "2015-03-13 18:00:00.035498"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Creativity Tools"], ["created_at", "2015-03-13 18:00:00.037056"], ["updated_at", "2015-03-13 18:00:00.037056"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Learning Skills"], ["created_at", "2015-03-13 18:00:00.038609"], ["updated_at", "2015-03-13 18:00:00.038609"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Career Skills"], ["created_at", "2015-03-13 18:00:00.040035"], ["updated_at", "2015-03-13 18:00:00.040035"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-03-13 14:00:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 281ms (Views: 272.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/application-c58dbcd27700e3f6b952b55c04741ce8.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:07 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:00:30 -0400
+Processing by UsersController#new as HTML
+  [1m[35mIndustry Load (0.4ms)[0m  SELECT "industries".* FROM "industries"
+  Rendered users/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 128ms (Views: 93.0ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/users" for ::1 at 2015-03-13 14:00:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OnLpfQNdMFp7TPK5RKV2A7LywARV4KzwtCNetT9ibGKd+X2AChxynYyAYk6qy9VUKX9QFKrCPFJRsKDP4jukkg==", "user"=>{"name"=>"dave", "email"=>"dave", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "mentor_type"=>"mentee", "industry_id"=>"10"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "mentor_type", "industry_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "dave"], ["email", "dave"], ["password_digest", "$2a$10$L5sTizwhk3ZwpBSMdpreV./aWsPjlJOfHAjmGqnP43Z3I3wWVsDFm"], ["mentor_type", 0], ["industry_id", 10], ["created_at", "2015-03-13 18:00:48.415324"], ["updated_at", "2015-03-13 18:00:48.415324"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "jNZRtRnXL1aKZTmxTemL2w"], ["updated_at", "2015-03-13 18:00:48.430427"], ["id", 1]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/edit
+Completed 302 Found in 104ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-13 14:00:48 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jNZRtRnXL1aKZTmxTemL2w"]]
+  [1m[35mIndustry Load (0.3ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.3ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered users/edit.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 121ms (Views: 110.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:00:48 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-13 14:01:03 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"03jjhnbB+RaiqnE2Y0Met6Pg6kgiVamyOsvQT54homZ083d7f4C70VVm4cGNLb3gOG16WN13ORDfWC41Q3hqlg=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jNZRtRnXL1aKZTmxTemL2w"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", nil], ["updated_at", "2015-03-13 18:01:03.594931"], ["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-13 14:01:03 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 126ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:03 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-13 14:01:09 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ldnsInZa6xYpfi1XuYhQxX0v/baln+eRGB7w7lpxA1BZikN9qzpz2/1huc1s0a+HD2dRIRPd/n8Wc92R3O0MbQ==", "session"=>{"email"=>"dave", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "dave"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "xZKNjEebGDvKt8lA3h2xMw"], ["updated_at", "2015-03-13 18:01:09.140956"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 75ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 14:01:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "xZKNjEebGDvKt8lA3h2xMw"]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:01:09 -0400
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-13 14:01:14 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "xZKNjEebGDvKt8lA3h2xMw"]]
+  [1m[35mIndustry Load (0.3ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.2ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered users/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 115ms (Views: 112.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-13 14:01:25 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "xZKNjEebGDvKt8lA3h2xMw"]]
+  [1m[36mIndustry Load (0.3ms)[0m  [1mSELECT "industries".* FROM "industries"[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"
+  [1m[36mAvailability Load (0.1ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/session" for ::1 at 2015-03-13 14:04:58 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iWAOItybSKaCHVv9oZrn4hesxjw/QGq5xZPeb7D9945FM6F9AfvQa1YCz2d0wxigZeRqq4kCc1fL/vMQNmH4sw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "xZKNjEebGDvKt8lA3h2xMw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-13 18:04:58.808007"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-13 14:04:58 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 112ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:04:58 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:04:59 -0400
+
+
+Started GET "/" for ::1 at 2015-03-13 14:10:17 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:17 -0400
+
+
+Started GET "/session/new" for ::1 at 2015-03-13 14:10:19 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for ::1 at 2015-03-13 14:10:25 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iqWq09NQ3WzkwGeDYbwF8MRgntMt0eUHuBhv51DuzWKL2d+0T0x7XS5TqmORaitjAKq7h+nF6LQzTJw8nKM5RQ==", "session"=>{"email"=>"dave", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dave"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "yJAJbsZu-9gOtCjCZvxofw"], ["updated_at", "2015-03-13 18:10:25.901201"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 76ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 14:10:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yJAJbsZu-9gOtCjCZvxofw"]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:10:26 -0400
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-13 14:10:28 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "yJAJbsZu-9gOtCjCZvxofw"]]
+  [1m[36mIndustry Load (0.2ms)[0m  [1mSELECT "industries".* FROM "industries"[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"
+  [1m[36mAvailability Load (0.2ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 120ms (Views: 117.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/session" for ::1 at 2015-03-13 14:11:21 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v2hBFFDtAcSoY9tJo9B9Brdvs0mZOYXv7XYCofKwRc++FDRzzPGn9WLwFqlTBlOVc6WWHV0tiFxmIvF6Pv2x6A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "yJAJbsZu-9gOtCjCZvxofw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-13 18:11:21.806515"], ["id", 1]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-13 14:11:21 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:11:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:22 -0400
+
+
+Started GET "/" for ::1 at 2015-03-13 14:11:25 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:11:25 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:15:24 -0400
+Processing by UsersController#new as HTML
+  [1m[36mIndustry Load (0.3ms)[0m  [1mSELECT "industries".* FROM "industries"[0m
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-13 14:15:42 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for ::1 at 2015-03-13 14:15:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sbjAO9PLmPCYydxa7Jf5kZWWHgbwsQ1AGWIv8+nu2rniwbCnZUc6rtTIpD+D/oKHIYidxcNBR9g3q8/CK5bxUw==", "session"=>{"email"=>"dave", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "dave"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "zxgiHudikEaqOV1fvBwaRg"], ["updated_at", "2015-03-13 18:15:47.293931"], ["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 73ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 14:15:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "zxgiHudikEaqOV1fvBwaRg"]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:15:47 -0400
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-13 14:15:52 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "zxgiHudikEaqOV1fvBwaRg"]]
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.1ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered users/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 110ms (Views: 107.7ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/session" for ::1 at 2015-03-13 14:16:35 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sK4o2gpFSKdNelTGb2gytbcRNFFIEweui2Uu6x8kPm/j11hGvMnq+QF7LKMAAUmjAw+3knvjTTalrM7a3VwVhQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "zxgiHudikEaqOV1fvBwaRg"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", nil], ["updated_at", "2015-03-13 18:16:35.177232"], ["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-13 14:16:35 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 120.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:35 -0400
+
+
+Started GET "/" for ::1 at 2015-03-13 14:16:38 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 113ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:16:38 -0400
