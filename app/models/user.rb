@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
 
  validates :name, :email, presence: true
 
- # serialize :industries
- # has_many :industries
+ serialize :skills
+ has_many :industries
  belongs_to :availability
 
 

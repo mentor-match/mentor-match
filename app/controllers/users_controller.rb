@@ -38,8 +38,8 @@ class UsersController < ApplicationController
 
   def update
     @user = current_user
-    industries_array = params["user"]["industry_id"]
-    @user.update(industry_id: industries_array ) 
+    skills_array = params["user"]["skill_id"]
+    @user.update(skill_id: skills_array ) 
     @user.update(profile_params)
 
     redirect_to new_filters_url
@@ -54,7 +54,7 @@ class UsersController < ApplicationController
   end
 
   def profile_params
-    params.require(:user).permit(:job_location_id, :availability_id, :mentor_type, :bio, :name, :title, :email, :years_experience, :fun_fact)
+    params.require(:user).permit(:job_location_id, :availability_id, :mentor_type, :bio, :name, :title, :email, :years_experience, :industry_id :fun_fact)
   end
 
   def user_is_current_user

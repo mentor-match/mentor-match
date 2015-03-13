@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :skills
+
   resources :locations
 
   root 'users#welcome'

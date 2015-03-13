@@ -84,4 +84,45 @@ end
 ].each do |i|
   Location.create(i)
 end
+
+[ {
+   name: 'Leadership',
+ },
+ {
+   name: 'Team Management',
+ },
+  {
+   name: "Strategy Tools",
+ },
+  {
+   name: "Problem Solving",
+ },
+  {
+   name: 'Decision Making',
+ },
+ {
+   name: 'Project Management',
+ },
+ {
+   name: 'Time Management',
+ },
+ {
+   name: 'Stress Management',
+ },
+ {
+   name: 'Communication',
+ },
+ {
+   name: 'Creativity Tools',
+ },
+ {
+   name: 'Learning Skills',
+ },
+ {
+   name: 'Career Skills',
+ }
+ 
+].each do |i|
+ Skill.create(i)
+end
   
