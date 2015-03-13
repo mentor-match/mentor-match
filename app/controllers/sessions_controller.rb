@@ -18,12 +18,8 @@ class SessionsController < ApplicationController
 
     if @user && @user.authenticate(session_params[:password])
      login!(@user)
-      
-      if @user.find_by(mentor_type: nil)
+    
          redirect_to user_path(@user)
-      else
-        render :edit
-      end
     else
       render :new
     end

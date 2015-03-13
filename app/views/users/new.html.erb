@@ -8,6 +8,21 @@
     <br/>
   <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
     <br/>
+    <label>What do you consider yourself?</label>
+
+    <select for="user_type" name="user[mentor_type]">
+      <option class="user_type" type="text" value="mentor">Mentor</option>
+      <option class="user_type" type="text" value="mentee">Mentee</option>
+      <option class="user_type" type="text" value="both">Both</option>
+    </select> 
+
+    <label>What is your current industry? </label>
+
+    <select for="user_type" name="user[industry_id]">
+      <% @industries.each do |i| %>
+      <option class="user_type" type="text" value="<%=i.id%>"><%= i.name %></option>
+      <% end %>
+    </select>
 
     <%= f.submit "Submit" %>
   <% end %>
