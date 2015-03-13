@@ -7,6 +7,13 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+Industry.delete_all
+Availability.delete_all
+Location.delete_all
+Skill.delete_all
+Role.delete_all
+
+
 [
   {
     name: 'Advertising',
@@ -126,3 +133,18 @@ end
  Skill.create(i)
 end
   
+
+
+[
+  {
+  name: "mentor"
+},
+  {
+  name: "mentee"
+},
+  {
+  name: "both"
+}
+].each do |i|
+  Role.create(i)
+end

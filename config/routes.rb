@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :availabilities
 
   resources :users do
-    resources :filters, only: [:new, :create, :index]
+    resources :filters, only: [:new, :create, :index, :show]
 
   end
   # '/users/:id/filter' =>  'users#new_filter'

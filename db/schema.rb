@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150313155248) do
+ActiveRecord::Schema.define(version: 20150313211047) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,12 @@ ActiveRecord::Schema.define(version: 20150313155248) do
     t.datetime "updated_at",                   null: false
   end
 
+  create_table "roles", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "sessions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -55,27 +61,36 @@ ActiveRecord::Schema.define(version: 20150313155248) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "user_skills", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "skill_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
-    t.string   "name",                null: false
+    t.string   "name",             null: false
     t.string   "title"
-    t.string   "email",               null: false
+    t.string   "email",            null: false
     t.integer  "years_experience"
-    t.integer  "mentor_type"
     t.integer  "job_location_id"
     t.string   "home_origin"
-    t.string   "password_digest",     null: false
+    t.string   "password_digest",  null: false
     t.string   "session_token"
     t.text     "bio"
     t.text     "fun_fact"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
+    t.text     "img_url"
     t.integer  "availability_id"
     t.integer  "industry_id"
-    t.text     "skill_id"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.integer  "skill_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "role_id"
+  end
+
+  create_table "userskills", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
