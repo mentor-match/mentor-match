@@ -1,3 +1,4 @@
 class Skill < ActiveRecord::Base
-  belongs_to :user
+	has_many :userskills
+	has_many :users, :through => :userskills
 end

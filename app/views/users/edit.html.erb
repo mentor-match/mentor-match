@@ -2,12 +2,12 @@
 
 <h1>Hi <%= @user.name %>!</h1>
 <%= form_for(@user) do |f| %>
-<label>What do you consider yourself?</label>
 
-<select for="user_type" name="user[mentor_type]">
-	<option class="user_type" type="text" value="mentor">Mentor</option>
-	<option class="user_type" type="text" value="mentee">Mentee</option>
-	<option class="user_type" type="text" value="both">Both</option>
+<label>What do you consider yourself? Now: <%= @user.role.name %></label>
+<select for="user_type" name="user[role_id]">
+	<% @roles.each do |r| %>
+		<option class="user_type" type="text" value="<%= r.id%>"><%= r.name %></option>
+	<% end %>
 </select>
 
 <label>Name: </label>
@@ -22,7 +22,7 @@
 
 <label>Industry: </label>
 <% @industries.each do |i| %>
-  <input class="user_industry" type="checkbox" name="user[industry_id]" value="<%=i.id%>"><%= i.name %></option>
+  <option class="user_industry" name="user[industry_id]" value="<%=i.id%>"><%= i.name %></option>
 <% end %>
 <br><br>
 
@@ -42,11 +42,11 @@
 <br>
 
 <label for="user_skill">Skills: </label><br>
-<% @skills.each do |i| %>
-
-<input class="user[skill]" name="user[skill_id][]" type="checkbox" value="<%= i.id %>">
-<%= i.name %>
+	<% @skills.each do |i| %>
+		<input class="user[skill]" name="user[skill_id][]" type="checkbox" value="<%= i.id %>">
+	<%= i.name %>
 </input>
+
 <br>
 
 <% end %>
@@ -65,11 +65,7 @@
 <label>Location: </label><br>
 <select for="user_location" name="user[job_location_id]">
 	<%  @locations.each do |l| %>
-
-	<option  class="user_availability" type="type" value="<%= l.id %>">
-		<%= l.city %>
-	</option>
-	<br>
+		<option  class="user_availability" type="type" value="<%= l.id %>"><%= l.city %></option>
 	<% end %>
 </select>
 <br>    
