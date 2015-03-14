@@ -23,7 +23,7 @@
 <label>Industry: </label>
 <select id="user_industry" for="user_industry" name="user[industry_id]">
   <% @industries.each do |i| %>
-     <option class="user_industry" <%= "selected" if @user.industry.id == i.id %> value="<%= i.id%>" value="<%=i.id%>">
+     <option class="user_industry" <%= "selected" if @user.industry.id == i.id %> value="<%=i.id%>">
      	<%= i.name %>
      </option>
   <% end %>
@@ -52,7 +52,7 @@
 
 <label for="user_skill">Skills: </label><br>
 	<% @skills.each do |s| %>
-		<input class="user[skill]" multiple ="true" name="user[skill_id][]" type="checkbox" <%= "checked" if @user.skill_id == s.id %> value="<%= s.id %>">
+		<input class="userSkill" multiple ="true" name="user[skill_id][]" type="checkbox" <%= "checked" if @user.skill_id == s.id %> value="<%= s.id %>">
 	<%= s.name %>
 </input>
 
@@ -72,12 +72,16 @@
 <br>  
 
 <div id="change-password">
-  <label>Change password: </label>
- 
+	Change password
+ <!--  <label>Change password: </label> -->
+ <div class="password-fields">
   <%= f.password_field :password, placeholder: "new password" %>
     <br/>
   <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
+  </div>
 </div>   
 <br/>
   <%= f.submit "Submit Edit" %>
   <% end %>
+
+  <%= javascript_include_tag 'users' %>

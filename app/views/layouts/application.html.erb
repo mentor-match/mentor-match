@@ -23,6 +23,18 @@
         <li>
           <%= link_to "Edit Profile", edit_user_url(current_user) %>
         </li>
+        <li>
+          <%= link_to "Home", root_path %>
+        </li>
+        <li>
+          <%=  link_to "Mentees", '/users/:user_id/filters' %>
+        </li>
+         <li>
+          <%=  button_to "Mentors", user_filters_path(current_user),  method: "get" %>
+        </li>
+        <li>
+          <%= link_to "Filter Search",  '/users/:user_id/filters/new' %>
+        </li>
         
       </ul>
     </nav>

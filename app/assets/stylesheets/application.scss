@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+ body {
+ 	margin: 0 auto;
+ 	font-size: 100%;
+ }
+
+ nav {
+    padding: 1em 1em;
+       li {
+          list-style: none;
+          display: inline-block;
+        a {
+           text-decoration: none;
+           color: #grey;
+     
+           a:active {
+             color: red;
+          }
+         }
+       }
+   }
+
+#change-password {
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 background-color: yellow;
+	  padding: 0.75em 0.25em;
+	  display: inline-block;
+
+	.password-fields {
+	  display: none;
+	}
+
+}
