@@ -5,9 +5,9 @@ class User < ActiveRecord::Base
 
  serialize :skills
 
- has_one :location
- has_one :industry
- has_one :availability
+ belongs_to :location
+ belongs_to :industry
+ belongs_to :availability
 
  has_many :userskills
  has_many :skills, :through => :userskills

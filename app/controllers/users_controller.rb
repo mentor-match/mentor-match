@@ -70,7 +70,7 @@ class UsersController < ApplicationController
   end
 
   def profile_params
-    params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :skill_id, :img_url, :fun_fact)
+    params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :skill_id, :img_url, :fun_fact, :interests)
   end
 
   def user_is_current_user
