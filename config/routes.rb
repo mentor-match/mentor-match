@@ -1,21 +1,21 @@
 Rails.application.routes.draw do
   
-  resources :skills
+  resources :skills, only: [:new, :create, :destroy]
 
-  resources :locations
+  resources :locations, only: [:new, :create, :destroy]
 
   root 'users#welcome'
 
-  resources :messages
+  resources :messages, only: [:new, :create, :destroy]
   
   resource :session, only: [:new, :create, :destroy]
 
-  resources :industries
+  resources :industries, only: [:new, :create, :destroy]
 
-  resources :availabilities
+  resources :availabilities, only: [:new, :create, :destroy]
 
   resources :users do
-    resources :filters, only: [:new, :create, :index, :show]
+    resources :filters, only: [:new, :create, :index, :show, :update]
 
   end
   # '/users/:id/filter' =>  'users#new_filter'
