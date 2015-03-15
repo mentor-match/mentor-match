@@ -1,16 +1,5 @@
 class FiltersController < ApplicationController
 
-def mentees
-  
- binding.pry
-
-end
-
-def mentors
-   binding.pry
-
-end
-
 def new
    @user = current_user
 
@@ -49,15 +38,6 @@ def new
      
    
      render :index
- end
-
- def mentors
-
- end
-
- def mentees
-
-
  end
 
 end
