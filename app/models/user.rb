@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  attr_reader :filter_results
  has_secure_password
 
  validates :name, :email, presence: true
@@ -13,4 +14,6 @@ class User < ActiveRecord::Base
  has_many :skills, :through => :userskills
 
  belongs_to :role
+
+
 end

@@ -1,7 +1,26 @@
 class UsersController < ApplicationController
    # before_action :user_is_current_user, only: [:edit, :update, :show]
+attr_reader :mentees
+  def mentees
+    
+   @users = User.where(:role_id=> [ 2, 3])
+   
+    render :index
+  end
+
+  def mentors
+    @users = User.where(:role_id=> [ 1, 3])
+
+    render :index
+  end
+
+  def index
+
+
+  end
 
   def welcome
+
   end
 
   def show
@@ -23,6 +42,7 @@ class UsersController < ApplicationController
   end
 
   def create
+   
     @user = User.new( user_params )
     @roles = Role.all
 
@@ -35,7 +55,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-    binding.pry
+  
     @user = current_user
 
     @industries = Industry.all
@@ -47,6 +67,7 @@ class UsersController < ApplicationController
   end
 
   def update
+   
     @industries = Industry.all
     @skills = Skill.all
     @avails = Availability.all
@@ -57,7 +78,8 @@ class UsersController < ApplicationController
       redirect_to user_path(current_user)
     else
       @user = current_user
-      # @user.update(skill_id: skills) 
+      skills = params["user"]["skill_id"]
+      @user.update(skill_id: skills) 
       @user.update(profile_params)
     end
     
@@ -73,7 +95,7 @@ class UsersController < ApplicationController
   end
 
   def profile_params
-    params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :skill_id, :img_url, :fun_fact, :interests)
+    params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :img_url, :fun_fact, :interests)
   end
 
   def user_is_current_user

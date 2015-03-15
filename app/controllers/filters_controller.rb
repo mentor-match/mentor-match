@@ -1,5 +1,16 @@
 class FiltersController < ApplicationController
-attr_reader :filter_results
+
+def mentees
+  
+ binding.pry
+
+end
+
+def mentors
+   binding.pry
+
+end
+
 def new
    @user = current_user
 
@@ -19,23 +30,24 @@ def new
  def index
 
   @user = current_user
-  @filter_results
+  @filters = filter_results
   @users = User.all
-
-
-   
+ 
  end
 
  def update
+    industry = params["industry_id"].to_i
+    avail = params["availability_id"].to_i
+    skills = params["skill_id"]
+    s = skills.map do |x|
+        x.to_i
+      end
+    location = params["job_location_id"].to_i
 
-    filter_results(params)
-    industry = params["filter"]["industry_id"].to_i
-    avail = params["filter"]["availability_id"].to_i
-    skills = params["filter"]["skill_id"]
-    location = params["filter"]["job_location_id"]
-
-   @filter_results = User.where(availability_id: avail, industry_id: industry, skill_id: skills, job_location_id: location)
-
+    filter_results = User.where(availability_id: avail, industry_id: industry, skill_id: s, job_location_id: location)
+   binding.pry
+     
+   
      render :index
  end
 

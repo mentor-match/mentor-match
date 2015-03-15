@@ -1,7 +1,7 @@
 <h1>Filter Options</h1>
 <%= form_for @user, as: :filters, url: "/users/:user_id/filters/:id" do |f| %>
 <label>Industry: </label>
-<select id="user_filter_industry" for="user_industry" name="filter[industry_id]">
+<select id="user_filter_industry" for="user_industry" name="industry_id">
   <% @industries.each do |i| %>
      <option class="user_industry" value="<%=i.id%>">
      	<%= i.name %>
@@ -11,21 +11,21 @@
 <br>
 <label for="user_skill">Skills: </label><br>
 	<% @skills.each do |s| %>
-	   <input class="userSkill" multiple ="true" name="filter[skill_id][]" type="checkbox" value="<%= s.id %>">
+	   <input multiple ="true" name="skill_id[]" type="checkbox" value="<%= s.id %>">
 	   <%= s.name %>
      </input>
      <br>
  <% end %>
 <br>
 <label>Location: </label>
-<select for="user_location" name="filter[job_location_id]">
+<select for="user_location" name="job_location_id">
 	<%  @locations.each do |l| %>
 		<option  class="user_availability" type="type" value="<%= l.id %>"><%= l.city %></option>
 	<% end %>
 </select>
 
 <label>Availability: </label>
-<select for="availability" name="filter[availability_id]">
+<select for="availability" name="availability_id">
 	<% @avails.each do |a| %>
 	<option  class="user_availability" type="type" value="<%= a.id %>">
 		<%= a.name %>

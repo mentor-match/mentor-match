@@ -14,6 +14,9 @@ Rails.application.routes.draw do
 
   resources :availabilities, only: [:new, :create, :destroy]
 
+  get 'users/mentees', to: "users#mentees"
+  get 'users/mentors', to: "users#mentors"
+
   resources :users do
     resources :filters, only: [:new, :create, :index, :show, :update]
 
