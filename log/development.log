@@ -47713,3 +47713,3314 @@ Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-14 16:50:14 -0400
+
+
+Started GET "/" for ::1 at 2015-03-15 10:53:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (17.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (39.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddInterestsColumn (20150314171812)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.9ms)[0m  [1mALTER TABLE "users" ADD "interests" text[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150314171812"]]
+  [1m[36m (12.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'availabilities'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'industries'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'locations'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'roles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sessions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_skills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'userskills'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-03-15 10:53:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (5.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "vv_jakWofenZFAlAb9hgxA"]]
+Completed 200 OK in 297ms (Views: 278.2ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:42 -0400
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:53:50 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "vv_jakWofenZFAlAb9hgxA"]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/6" for ::1 at 2015-03-15 10:53:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "vv_jakWofenZFAlAb9hgxA"]]
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1165261992617104445_70228341994800'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (13.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (33.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:53:51 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "vv_jakWofenZFAlAb9hgxA"]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/6" for ::1 at 2015-03-15 10:53:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "vv_jakWofenZFAlAb9hgxA"]]
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1165261992617104445_70228339341280'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (15.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (1.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (33.6ms)
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 10:53:56 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iV5kBt2reL+d8ECyM9XZViJnA333moMTITlpqnP6ngoqwdgpTbLCIoKFUMrmpLeHq4+Iwa/Jqyl+i0OCmKdfVw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "vv_jakWofenZFAlAb9hgxA"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 14:53:56.253988"], ["id", 6]]
+  [1m[35m (5.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 15ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:53:56 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:53:56 -0400
+
+
+Started GET "/" for ::1 at 2015-03-15 10:54:00 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 124ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:00 -0400
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:54:02 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for ::1 at 2015-03-15 10:54:05 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtLoPGaHhaFs1DSfWStumABziBfIFNBcvknjum2hRQTP5Jc23QjMswoxFCKQqtqCA8tXUGrmSFfee4pqqo3Cog==", "session"=>{"email"=>"dave", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dave"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "nAAeXVOIex5FVQCjR54ktA"], ["updated_at", "2015-03-15 14:54:05.243856"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 77ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-15 10:54:05 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "nAAeXVOIex5FVQCjR54ktA"]]
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1165261992617104445_70228339341280'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (29.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 10:54:11 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "nAAeXVOIex5FVQCjR54ktA"]]
+Completed 200 OK in 129ms (Views: 128.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:11 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 10:54:12 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JJuyhdB+S8xlkSA27wrmp41TRFETuuydG44b4yQ7h0bNrc2Pa/EC3gN0AIsmi1K9juubFrFIdJZ7vHIz4xcA4A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "nAAeXVOIex5FVQCjR54ktA"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 14:54:12.562161"], ["id", 1]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:54:12 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 124.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:12 -0400
+
+
+Started GET "/" for ::1 at 2015-03-15 10:54:17 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:54:18 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-03-15 10:54:19 -0400
+Processing by UsersController#new as HTML
+  [1m[36mRole Load (0.5ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  [1m[35mIndustry Load (0.3ms)[0m  SELECT "industries".* FROM "industries"
+  Rendered users/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 132ms (Views: 121.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/users" for ::1 at 2015-03-15 10:54:25 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9PDIphtDhY/wQdH61V9E7uf7L1URkX8QD1zYi38whcUphxFsVOJQ/lLGyZLWr67KCRiQnYlGJXIVWCaY3qf2Jg==", "user"=>{"name"=>"dave", "email"=>"dave", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role_id"=>"1", "industry_id"=>"11"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "role_id", "industry_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "dave"], ["email", "dave"], ["password_digest", "$2a$10$ijRi8g.xvDa/gnsTUYk8pO29j21c..ibBSuHJDu3rffpaCD/yhKnS"], ["role_id", 1], ["industry_id", 11], ["created_at", "2015-03-15 14:54:25.596694"], ["updated_at", "2015-03-15 14:54:25.596694"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"], ["updated_at", "2015-03-15 14:54:25.599390"], ["id", 7]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/7/edit
+Completed 302 Found in 80ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/edit" for ::1 at 2015-03-15 10:54:25 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT "roles".* FROM "roles"
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mIndustry Load (0.2ms)[0m  [1mSELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.4ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  Rendered users/edit.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    63: <label>Availability: </label>
+    64: <select for="availability" name="user[availability_id]">
+    65: 	<% @avails.each do |a| %>
+    66: 	<option  class="user_availability" type="type" <%= "selected" if @user.availability.id == a.id %> value="<%= a.id %>">
+    67: 		<%= a.name %>
+    68: 	</option>
+    69: 	<br>
+  app/views/users/edit.html.erb:66:in `block (2 levels) in _app_views_users_edit_html_erb__3027162810115837356_70228312938120'
+  app/views/users/edit.html.erb:65:in `block in _app_views_users_edit_html_erb__3027162810115837356_70228312938120'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3027162810115837356_70228312938120'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (13.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (30.9ms)
+
+
+Started GET "/users/7" for ::1 at 2015-03-15 10:55:10 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1165261992617104445_70228339341280'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (30.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 10:55:13 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+Completed 200 OK in 116ms (Views: 115.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:55:13 -0400
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:55:14 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/7" for ::1 at 2015-03-15 10:55:14 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1165261992617104445_70228341994800'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (27.8ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:55:15 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/7" for ::1 at 2015-03-15 10:55:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1165261992617104445_70228339341280'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (15.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (30.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 10:55:18 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/7/edit" for ::1 at 2015-03-15 10:55:19 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mIndustry Load (0.2ms)[0m  [1mSELECT "industries".* FROM "industries"[0m
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"
+  [1m[36mAvailability Load (0.2ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  Rendered users/edit.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    63: <label>Availability: </label>
+    64: <select for="availability" name="user[availability_id]">
+    65: 	<% @avails.each do |a| %>
+    66: 	<option  class="user_availability" type="type" <%= "selected" if @user.availability.id == a.id %> value="<%= a.id %>">
+    67: 		<%= a.name %>
+    68: 	</option>
+    69: 	<br>
+  app/views/users/edit.html.erb:66:in `block (2 levels) in _app_views_users_edit_html_erb__3027162810115837356_70228337693280'
+  app/views/users/edit.html.erb:65:in `block in _app_views_users_edit_html_erb__3027162810115837356_70228337693280'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3027162810115837356_70228337693280'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.2ms)
+
+
+Started GET "/users/7/edit" for ::1 at 2015-03-15 10:55:19 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mIndustry Load (0.2ms)[0m  [1mSELECT "industries".* FROM "industries"[0m
+  [1m[35mIndustry Load (0.3ms)[0m  SELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"
+  [1m[36mAvailability Load (0.3ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  Rendered users/edit.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    63: <label>Availability: </label>
+    64: <select for="availability" name="user[availability_id]">
+    65: 	<% @avails.each do |a| %>
+    66: 	<option  class="user_availability" type="type" <%= "selected" if @user.availability.id == a.id %> value="<%= a.id %>">
+    67: 		<%= a.name %>
+    68: 	</option>
+    69: 	<br>
+  app/views/users/edit.html.erb:66:in `block (2 levels) in _app_views_users_edit_html_erb__3027162810115837356_70228312938120'
+  app/views/users/edit.html.erb:65:in `block in _app_views_users_edit_html_erb__3027162810115837356_70228312938120'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3027162810115837356_70228312938120'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (29.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "industries"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "availabilities"[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "locations"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "skills"[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "roles"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Advertising"], ["created_at", "2015-03-15 14:56:06.759427"], ["updated_at", "2015-03-15 14:56:06.759427"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Accounting"], ["created_at", "2015-03-15 14:56:06.763396"], ["updated_at", "2015-03-15 14:56:06.763396"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Business"], ["created_at", "2015-03-15 14:56:06.764925"], ["updated_at", "2015-03-15 14:56:06.764925"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Information_technology"], ["created_at", "2015-03-15 14:56:06.766460"], ["updated_at", "2015-03-15 14:56:06.766460"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tech"], ["created_at", "2015-03-15 14:56:06.768120"], ["updated_at", "2015-03-15 14:56:06.768120"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Public_relations"], ["created_at", "2015-03-15 14:56:06.769838"], ["updated_at", "2015-03-15 14:56:06.769838"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Media"], ["created_at", "2015-03-15 14:56:06.771593"], ["updated_at", "2015-03-15 14:56:06.771593"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Finance"], ["created_at", "2015-03-15 14:56:06.773110"], ["updated_at", "2015-03-15 14:56:06.773110"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Human_resources"], ["created_at", "2015-03-15 14:56:06.774537"], ["updated_at", "2015-03-15 14:56:06.774537"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "industries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Marketing"], ["created_at", "2015-03-15 14:56:06.776036"], ["updated_at", "2015-03-15 14:56:06.776036"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Annually"], ["created_at", "2015-03-15 14:56:06.780532"], ["updated_at", "2015-03-15 14:56:06.780532"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Monthly"], ["created_at", "2015-03-15 14:56:06.782452"], ["updated_at", "2015-03-15 14:56:06.782452"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Quarterly"], ["created_at", "2015-03-15 14:56:06.783998"], ["updated_at", "2015-03-15 14:56:06.783998"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Biannually"], ["created_at", "2015-03-15 14:56:06.785423"], ["updated_at", "2015-03-15 14:56:06.785423"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "availabilities" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Unavailable"], ["created_at", "2015-03-15 14:56:06.786858"], ["updated_at", "2015-03-15 14:56:06.786858"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Boston"], ["created_at", "2015-03-15 14:56:06.791240"], ["updated_at", "2015-03-15 14:56:06.791240"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["city", "New York"], ["created_at", "2015-03-15 14:56:06.793185"], ["updated_at", "2015-03-15 14:56:06.793185"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "San Francisco"], ["created_at", "2015-03-15 14:56:06.794771"], ["updated_at", "2015-03-15 14:56:06.794771"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["city", "Philadephia"], ["created_at", "2015-03-15 14:56:06.796220"], ["updated_at", "2015-03-15 14:56:06.796220"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Los Angeles"], ["created_at", "2015-03-15 14:56:06.797709"], ["updated_at", "2015-03-15 14:56:06.797709"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Leadership"], ["created_at", "2015-03-15 14:56:06.802136"], ["updated_at", "2015-03-15 14:56:06.802136"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Team Management"], ["created_at", "2015-03-15 14:56:06.804060"], ["updated_at", "2015-03-15 14:56:06.804060"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Strategy Tools"], ["created_at", "2015-03-15 14:56:06.805528"], ["updated_at", "2015-03-15 14:56:06.805528"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Problem Solving"], ["created_at", "2015-03-15 14:56:06.807137"], ["updated_at", "2015-03-15 14:56:06.807137"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Decision Making"], ["created_at", "2015-03-15 14:56:06.808545"], ["updated_at", "2015-03-15 14:56:06.808545"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Project Management"], ["created_at", "2015-03-15 14:56:06.810154"], ["updated_at", "2015-03-15 14:56:06.810154"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Time Management"], ["created_at", "2015-03-15 14:56:06.811636"], ["updated_at", "2015-03-15 14:56:06.811636"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Stress Management"], ["created_at", "2015-03-15 14:56:06.813246"], ["updated_at", "2015-03-15 14:56:06.813246"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Communication"], ["created_at", "2015-03-15 14:56:06.815398"], ["updated_at", "2015-03-15 14:56:06.815398"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Creativity Tools"], ["created_at", "2015-03-15 14:56:06.817244"], ["updated_at", "2015-03-15 14:56:06.817244"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Learning Skills"], ["created_at", "2015-03-15 14:56:06.818668"], ["updated_at", "2015-03-15 14:56:06.818668"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Career Skills"], ["created_at", "2015-03-15 14:56:06.820238"], ["updated_at", "2015-03-15 14:56:06.820238"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "mentor"], ["created_at", "2015-03-15 14:56:06.824265"], ["updated_at", "2015-03-15 14:56:06.824265"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "mentee"], ["created_at", "2015-03-15 14:56:06.825995"], ["updated_at", "2015-03-15 14:56:06.825995"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "both"], ["created_at", "2015-03-15 14:56:06.827493"], ["updated_at", "2015-03-15 14:56:06.827493"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-03-15 10:56:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+Completed 200 OK in 212ms (Views: 200.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:16 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 10:56:17 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1l6RNAzZKibhFf9bECBs2fmLlIvSRho1R7dwGgNZfcsLKUj+Q3j/V0OS5zMT0Ib9F2grQ0qRQFdds44Jos4OKA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3TgytX1kquz-dureyOjbqg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 14:56:17.856855"], ["id", 7]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 11ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 10:56:17 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 142ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:18 -0400
+
+
+Started GET "/" for ::1 at 2015-03-15 10:56:21 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 128ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 10:56:22 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-03-15 10:56:24 -0400
+Processing by UsersController#new as HTML
+  [1m[36mRole Load (0.5ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  [1m[35mIndustry Load (0.4ms)[0m  SELECT "industries".* FROM "industries"
+  Rendered users/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 138ms (Views: 124.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users" for ::1 at 2015-03-15 10:56:31 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JWqWj5NVhlnJCbV+h7A3QJimkJ+apHZ5gooF7T3hBCvS1hHRlhIqXi25gR+zG7bx5BcuDSXt3TDA50ShM1Iiag==", "user"=>{"name"=>"henry", "email"=>"henry", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role_id"=>"4", "industry_id"=>"21"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "role_id", "industry_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "henry"], ["email", "henry"], ["password_digest", "$2a$10$WnUR7fajzS/DBUVJ6UJN/ebxewEOmVEmn5N/E3GENBpgmWZirgFeW"], ["role_id", 4], ["industry_id", 21], ["created_at", "2015-03-15 14:56:31.442462"], ["updated_at", "2015-03-15 14:56:31.442462"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "5vHt5s7nRP2oxeZ-F6-PKQ"], ["updated_at", "2015-03-15 14:56:31.445269"], ["id", 8]]
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/8/edit
+Completed 302 Found in 80ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/8/edit" for ::1 at 2015-03-15 10:56:31 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "5vHt5s7nRP2oxeZ-F6-PKQ"]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT "roles".* FROM "roles"
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mIndustry Load (0.3ms)[0m  [1mSELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1[0m  [["id", 21]]
+  [1m[35mLocation Load (1.0ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.4ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  Rendered users/edit.html.erb within layouts/application (45.3ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    63: <label>Availability: </label>
+    64: <select for="availability" name="user[availability_id]">
+    65: 	<% @avails.each do |a| %>
+    66: 	<option  class="user_availability" type="type" <%= "selected" if @user.availability.id == a.id %> value="<%= a.id %>">
+    67: 		<%= a.name %>
+    68: 	</option>
+    69: 	<br>
+  app/views/users/edit.html.erb:66:in `block (2 levels) in _app_views_users_edit_html_erb___1191491809596461482_70129262516280'
+  app/views/users/edit.html.erb:65:in `block in _app_views_users_edit_html_erb___1191491809596461482_70129262516280'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb___1191491809596461482_70129262516280'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (35.8ms)
+  [1m[36mAvailability Load (0.4ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+
+
+Started GET "/" for ::1 at 2015-03-15 11:01:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "5vHt5s7nRP2oxeZ-F6-PKQ"]]
+Completed 200 OK in 218ms (Views: 207.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:37 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:01:39 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClKp2vcETa2fT1tpIT0RHun12S3eDHyId9tmiAjLKB797i6E8kPhqnv/bwgVlpCvlURnv2FF18E1tifEBngOXw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "5vHt5s7nRP2oxeZ-F6-PKQ"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:01:39.142354"], ["id", 8]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:01:39 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:01:39 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:01:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NXabAX4AAxaC/0waZBYndzDA4+PRchpjMU7cWJo52b12cNPh0xkfo5DIkrvJrJf8IHPn5wQF9vE9/uI0TGVXSw==", "session"=>{"email"=>"henry", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "henry"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Gef-Hwb7BBDUNt4DoJ3rmQ"], ["updated_at", "2015-03-15 15:01:44.061058"], ["id", 8]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/8
+Completed 302 Found in 77ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/8" for ::1 at 2015-03-15 11:01:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Gef-Hwb7BBDUNt4DoJ3rmQ"]]
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___4392928425545213678_70119143799540'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (34.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 11:05:28 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Gef-Hwb7BBDUNt4DoJ3rmQ"]]
+Completed 200 OK in 110ms (Views: 109.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:28 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:05:30 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5+qFVhV/4s+DhHml6FElrXLodbdsKI485bEW59wgsB+k7M22uGb+epGzpwRF65UmYltxs7lfYq7pASiLCnw+6Q=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Gef-Hwb7BBDUNt4DoJ3rmQ"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:05:30.210743"], ["id", 8]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:05:30 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 106ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:30 -0400
+
+
+Started GET "/" for ::1 at 2015-03-15 11:05:32 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 112ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:33 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-03-15 11:05:36 -0400
+Processing by UsersController#new as HTML
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  [1m[35mIndustry Load (0.3ms)[0m  SELECT "industries".* FROM "industries"
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 134ms (Views: 123.0ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/users" for ::1 at 2015-03-15 11:05:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bv8WIlfO1FPU02RSt/5YR7Mze+EvPuejTTt3ZHC3hYM0qK6qQ2csTv4sMs58XgVB4B+WFEzdI2b2pzak7wzhmw==", "user"=>{"name"=>"fred", "email"=>"fred", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role_id"=>"4", "industry_id"=>"21"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "role_id", "industry_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "fred"], ["email", "fred"], ["password_digest", "$2a$10$LpDN6/c5r4ae2q40eKvaMuZLLjLg7jeJ/9J1wLOgvQg/Pol4o6gUO"], ["role_id", 4], ["industry_id", 21], ["created_at", "2015-03-15 15:05:48.421790"], ["updated_at", "2015-03-15 15:05:48.421790"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "VA3j26iRkG76MElzk1zYrA"], ["updated_at", "2015-03-15 15:05:48.424946"], ["id", 9]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/9/edit
+Completed 302 Found in 81ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/9/edit" for ::1 at 2015-03-15 11:05:48 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "VA3j26iRkG76MElzk1zYrA"]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles"
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mIndustry Load (0.2ms)[0m  [1mSELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1[0m  [["id", 21]]
+  [1m[35mLocation Load (0.5ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.6ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  Rendered users/edit.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 160ms (Views: 148.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:05:48 -0400
+
+
+Started GET "/users/9/edit" for ::1 at 2015-03-15 11:05:53 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "VA3j26iRkG76MElzk1zYrA"]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles"
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mIndustry Load (0.2ms)[0m  [1mSELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1[0m  [["id", 21]]
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mAvailability Load (0.1ms)[0m  SELECT "availabilities".* FROM "availabilities"
+  Rendered users/edit.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 136ms (Views: 133.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/:user_id/filters" for ::1 at 2015-03-15 11:05:58 -0400
+Processing by FiltersController#index as HTML
+  Parameters: {"user_id"=>":user_id"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "VA3j26iRkG76MElzk1zYrA"]]
+  Rendered filters/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4738ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: 
+    3: <% @filter_results.each do |user| %>
+    4: 
+    5: <h4><%=  user.name  %></h4>
+    6: 
+  app/views/filters/index.html.erb:3:in `_app_views_filters_index_html_erb__3705312438695283_70119172392740'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (34.7ms)
+
+
+Started GET "/users/:user_id/filters" for ::1 at 2015-03-15 11:06:03 -0400
+Processing by FiltersController#index as HTML
+  Parameters: {"user_id"=>":user_id"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "VA3j26iRkG76MElzk1zYrA"]]
+  Rendered filters/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 1349ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: 
+    3: <% @filter_results.each do |user| %>
+    4: 
+    5: <h4><%=  user.name  %></h4>
+    6: 
+  app/views/filters/index.html.erb:3:in `_app_views_filters_index_html_erb__3705312438695283_70119170041400'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (13.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (32.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 11:09:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "VA3j26iRkG76MElzk1zYrA"]]
+Completed 200 OK in 208ms (Views: 197.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:13 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:14 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:09:17 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NX4LIOFumm1tCgswni4q/YYwKD6a7roSgg3O/HkmKX4HKbOo9cdicEf1XaxVjnf71RzFy/kNftc5kY885p1NZg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "VA3j26iRkG76MElzk1zYrA"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:09:17.824858"], ["id", 9]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:09:17 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 110ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:17 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:17 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:17 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:17 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:17 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:17 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:09:18 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:09:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kE7xzPcKGZFO1QO9f+h/EaxTxAr/1Z/u79nztVJBx6koyhrtQU0Z3BsfZOdk1eiJrVIdc0j7wDK3QXXl509uhg==", "session"=>{"email"=>"fred", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "fred"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "2kL6sknqju1Bp6TVGqjt_Q"], ["updated_at", "2015-03-15 15:09:49.129993"], ["id", 9]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 78ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/9" for ::1 at 2015-03-15 11:09:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "2kL6sknqju1Bp6TVGqjt_Q"]]
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1454480852932817492_70332895085440'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (41.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 11:13:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "2kL6sknqju1Bp6TVGqjt_Q"]]
+Completed 200 OK in 207ms (Views: 195.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:44 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:13:46 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"72ocnKtQoPfCFM9XLaBOiCdXPjwfOwLA4BWWlmW1Qw9X7ve9HRegupfeqA02ndkQJlbnRagVXRy4jRDG0LvqIA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "2kL6sknqju1Bp6TVGqjt_Q"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:13:46.379454"], ["id", 9]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:13:46 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 112ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:13:46 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:13:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l2qwIa9lEGXBZpoHCZvlHBRaI4fBDaexLJyU/667LMSMftUuV6WoqhI/4ucOKt5gshCjhWuzY1b6SNtSVc+GmQ==", "session"=>{"email"=>"fred", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "fred"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "JpXwvH6ffYpLHccF-sgNRA"], ["updated_at", "2015-03-15 15:13:49.796721"], ["id", 9]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 76ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/9" for ::1 at 2015-03-15 11:13:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "JpXwvH6ffYpLHccF-sgNRA"]]
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>SIGN UP</h1>
+    2: 
+    3:   <%= form_for @user do |f| %>
+    4:   <%= f.text_field :name, placeholder: "name" %>
+    5:   <%= f.text_field :email, placeholder: "your email" %>
+    6:     <br/>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___2160975917351801437_70178558547860'
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (13.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (1.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (36.5ms)
+
+
+Started POST "/users/console/repl_sessions/4a7da3d5672c4ca4e9ff202882c95ca9/trace" for ::1 at 2015-03-15 11:16:51 -0400
+
+
+Started GET "/" for ::1 at 2015-03-15 11:17:19 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "JpXwvH6ffYpLHccF-sgNRA"]]
+Completed 200 OK in 139ms (Views: 136.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:19 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:17:21 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HzohcFPE7SVjFIcWKIoOeoI4KF+Ull7jl/pv5btNN2IELkR/qwRV6rBN//YvOzUGJHKoXT4omgRBLiBIQDmdPw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "JpXwvH6ffYpLHccF-sgNRA"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:17:21.043773"], ["id", 9]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:17:21 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:17:21 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:17:24 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"At5s8LksMKOUBasqJOqyyB4yqAADnJ7e1BnkW8GBzp/K+MLkkbnqG+VNT2yqBxr84NfC95CdfGgur45KqT6C8g==", "session"=>{"email"=>"dave", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dave"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "5OiXq1L-0vkOZj-Cfio7Gw"], ["updated_at", "2015-03-15 15:17:24.911193"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 80ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-15 11:17:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "5OiXq1L-0vkOZj-Cfio7Gw"]]
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 182322ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <label>What do you consider yourself?</label>
+    12: 
+    13:     <select for="user_type" name="user[role_id]">
+    14:       <% @roles.each do |r| %>
+    15:         <option class="user_type" type="text" value="<%= r.id %>"><%= r.name %></option>
+    16:       <% end %>
+    17:     </select>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___2160975917351801437_70178558547860'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___2160975917351801437_70178558547860'
+  app/controllers/users_controller.rb:13:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (27.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 11:20:34 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "5OiXq1L-0vkOZj-Cfio7Gw"]]
+Completed 200 OK in 123ms (Views: 120.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:34 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:20:36 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"N7VNRk9ALgtZCOJD2P4HQ64KhZb6Rw39ABK7P4dKm0f/k+NSZ9X0syhABgVWE693UO/vYWlG70v6pNEu7/XXKg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "5OiXq1L-0vkOZj-Cfio7Gw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:20:36.931740"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:20:36 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:20:37 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:20:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nkcTzA5o77YbQSZQFteoCo56L9srbOCNGEdlHqAwMb8/h8vkJsvnXvTQ8k5WiLhiOaginNqyX9wA5KAIV+4Ajg==", "session"=>{"email"=>"dave", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dave"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "jgHx-K41W6aUb00M1-6_sg"], ["updated_at", "2015-03-15 15:20:40.221280"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 78ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-15 11:20:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 4600ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>This is your profile <%=@user.name  %> </h1>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__3519713346354769900_70178496885260'
+  app/controllers/users_controller.rb:13:in `show'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (11.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.6ms)
+
+
+Started GET "/users/1" for ::1 at 2015-03-15 11:21:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2133ms (Views: 118.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 11:21:08 -0400
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-15 11:25:58 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  [1m[35mRole Load (0.8ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered users/edit.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     6: <label>What do you consider yourself?</label> <br>
+     7: <select for="user_type" name="user[role_id]">
+     8: 	<% @roles.each do |r| %>
+     9: 		<option class="user_type" type="text"  <%= "selected" if @user.role.id == r.id %> value="<%= r.id%>"><%= r.name %></option>
+    10: 	<% end %>
+    11: </select>
+    12: <br>
+  app/views/users/edit.html.erb:9:in `block (2 levels) in _app_views_users_edit_html_erb__3440142677062071391_70178533737560'
+  app/views/users/edit.html.erb:8:in `block in _app_views_users_edit_html_erb__3440142677062071391_70178533737560'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3440142677062071391_70178533737560'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.1ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (25.4ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-15 11:25:59 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered users/edit.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     6: <label>What do you consider yourself?</label> <br>
+     7: <select for="user_type" name="user[role_id]">
+     8: 	<% @roles.each do |r| %>
+     9: 		<option class="user_type" type="text"  <%= "selected" if @user.role.id == r.id %> value="<%= r.id%>"><%= r.name %></option>
+    10: 	<% end %>
+    11: </select>
+    12: <br>
+  app/views/users/edit.html.erb:9:in `block (2 levels) in _app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+  app/views/users/edit.html.erb:8:in `block in _app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (26.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 11:27:00 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+Completed 200 OK in 106ms (Views: 105.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-15 11:27:02 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  Rendered users/edit.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     6: <label>What do you consider yourself?</label> <br>
+     7: <select for="user_type" name="user[role_id]">
+     8: 	<% @roles.each do |r| %>
+     9: 		<option class="user_type" type="text"  <%= "selected" if @user.role.id == r.id %> value="<%= r.id%>"><%= r.name %></option>
+    10: 	<% end %>
+    11: </select>
+    12: <br>
+  app/views/users/edit.html.erb:9:in `block (2 levels) in _app_views_users_edit_html_erb__3440142677062071391_70178533737560'
+  app/views/users/edit.html.erb:8:in `block in _app_views_users_edit_html_erb__3440142677062071391_70178533737560'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3440142677062071391_70178533737560'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.0ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (26.4ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-15 11:27:02 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     6: <label>What do you consider yourself?</label> <br>
+     7: <select for="user_type" name="user[role_id]">
+     8: 	<% @roles.each do |r| %>
+     9: 		<option class="user_type" type="text"  <%= "selected" if @user.role.id == r.id %> value="<%= r.id%>"><%= r.name %></option>
+    10: 	<% end %>
+    11: </select>
+    12: <br>
+  app/views/users/edit.html.erb:9:in `block (2 levels) in _app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+  app/views/users/edit.html.erb:8:in `block in _app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.5ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.8ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (14.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.6ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-15 11:27:42 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  Rendered users/edit.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 63410ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     6: <label>What do you consider yourself?</label> <br>
+     7: <select for="user_type" name="user[role_id]">
+     8: 	<% @roles.each do |r| %>
+     9: 		<option class="user_type" type="text"  <%= "selected" if @user.role.id == r.id %> value="<%= r.id%>"><%= r.name %></option>
+    10: 	<% end %>
+    11: </select>
+    12: <br>
+  app/views/users/edit.html.erb:9:in `block (2 levels) in _app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+  app/views/users/edit.html.erb:8:in `block in _app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+  app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__3440142677062071391_70178538984540'
+
+
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (12.7ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/davidcarlsonberg/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (28.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-15 11:28:49 -0400
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+Completed 200 OK in 205ms (Views: 203.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 11:28:50 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:28:51 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WU5sILxy7QK0IwUks3ohsnIQ1ZDorHFwcjPbt/dKMEr4jrQIlNHl6luy0TrzJTHaxcLY1xlyziFqkB6hAJQBew=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jgHx-K41W6aUb00M1-6_sg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", nil], ["updated_at", "2015-03-15 15:28:51.231839"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:28:51 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 11:28:51 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:28:54 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u0jUAE0S2ccPzRvQyX4vA9cIg1pK7k3GYtnSTFdH8VoYNmMHwIxdhigGyTearFeTuzA6qVO4G4jXicFkYRky2g==", "session"=>{"email"=>"fred", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "fred"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "4zpjzskXL2m8A6aX6Lz0ag"], ["updated_at", "2015-03-15 15:28:54.643231"], ["id", 9]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 74ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/9" for ::1 at 2015-03-15 11:28:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "4zpjzskXL2m8A6aX6Lz0ag"]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 120ms (Views: 119.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 11:28:54 -0400
+
+
+Started GET "/users/9/edit" for ::1 at 2015-03-15 11:28:56 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "4zpjzskXL2m8A6aX6Lz0ag"]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mIndustry Load (0.4ms)[0m  [1mSELECT "industries".* FROM "industries"[0m
+  [1m[35mIndustry Load (0.2ms)[0m  SELECT  "industries".* FROM "industries" WHERE "industries"."id" = $1 LIMIT 1  [["id", 21]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mSkill Load (0.2ms)[0m  SELECT "skills".* FROM "skills"
+  [1m[36mAvailability Load (0.3ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  Rendered users/edit.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 6356ms (Views: 160.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:29:02 -0400
+
+
+Started DELETE "/session" for ::1 at 2015-03-15 11:29:32 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KAhfNG+05pkATmgqZDLyp18FbKECPwv8LhxX/80hzjGLdugz4ipi2CeFus034Io3Mz3VUhtpXbKbTETX+38NsQ=="}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "4zpjzskXL2m8A6aX6Lz0ag"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", nil], ["updated_at", "2015-03-15 15:29:32.405892"], ["id", 9]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-03-15 11:29:32 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 11:29:32 -0400
+
+
+Started POST "/session" for ::1 at 2015-03-15 11:29:35 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"huYyCPUBuRnJN7lNc9/UsM7TArPsqIyx3ZddKDVpDaBcDKuxSFyJcyn1EV7zFiRnaRXtjN1YrlohaM9RdOVh2Q==", "session"=>{"email"=>"fred", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "fred"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "fbwqsupJMcXHiXMw1m6T7w"], ["updated_at", "2015-03-15 15:29:35.143530"], ["id", 9]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 77ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/9" for ::1 at 2015-03-15 11:29:35 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "fbwqsupJMcXHiXMw1m6T7w"]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 120ms (Views: 119.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/availabilities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/industries-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/filters-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/locations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/skills-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/application-8004d899aca94fcf62085996ccde3458.css?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/availabilities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/filters-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/industries-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/locations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/users-99996ccd08cdd5daf4a734711dcde4de.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/skills-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/assets/application-1bbd93e0c4408f66affe71abbf37c19d.js?body=1" for ::1 at 2015-03-15 11:29:35 -0400
+
+
+Started GET "/users/:user_id/filters/new" for ::1 at 2015-03-15 11:31:16 -0400
+Processing by FiltersController#new as HTML
+  Parameters: {"user_id"=>":user_id"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "fbwqsupJMcXHiXMw1m6T7w"]]
+  [1m[35mIndustry Load (0.9ms)[0m  SELECT "industries".* FROM "industries"
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mAvailability Load (0.2ms)[0m  [1mSELECT "availabilities".* FROM "availabilities"[0m
+  Rendered filters/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 122ms (Views: 119.4ms | ActiveRecord: 1.6ms)

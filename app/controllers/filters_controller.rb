@@ -17,7 +17,7 @@ def new
  end
 
  def index
-   binding.pry
+
   @user = current_user
   @filter_results
   @users = User.all
@@ -27,7 +27,7 @@ def new
  end
 
  def update
-    # binding.pry
+
     filter_results(params)
     industry = params["filter"]["industry_id"].to_i
     avail = params["filter"]["availability_id"].to_i
@@ -40,11 +40,11 @@ def new
  end
 
  def mentors
-   binding.pry
+
  end
 
  def mentees
-   binding.pry
+
 
  end
 

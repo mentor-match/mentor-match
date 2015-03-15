@@ -63,7 +63,7 @@
 <label>Availability: </label>
 <select for="availability" name="user[availability_id]">
 	<% @avails.each do |a| %>
-	<option  class="user_availability" type="type" <%= "selected" if @user.availability.id == a.id %> value="<%= a.id %>">
+	<option  class="user_availability" type="type" <%= "selected" if @user.availability_id == a.id %> value="<%= a.id %>">
 		<%= a.name %>
 	</option>
 	<br>

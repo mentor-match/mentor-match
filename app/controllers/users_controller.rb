@@ -5,11 +5,13 @@ class UsersController < ApplicationController
   end
 
   def show
+
     if current_user.id != params[:id].to_i
       redirect_to user_path(current_user)
       @user = current_user
     else
-      render :new  
+      @user = current_user
+      render :show 
     end
   end
 
@@ -33,6 +35,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    binding.pry
     @user = current_user
 
     @industries = Industry.all
