@@ -9,7 +9,7 @@
 <body>
 
   <div class="logo">
-        MentorMatch
+         <%= link_to "MentorMatch", root_path %>
       </div>
       
 	<% if current_user %>
@@ -23,9 +23,6 @@
 
         <li>
           <%= link_to "Edit Profile", edit_user_url(current_user) %>
-        </li>
-        <li>
-          <%= link_to "Home", root_path %>
         </li>
         <li>
            <%= link_to "mentee", "/users/mentees" %>

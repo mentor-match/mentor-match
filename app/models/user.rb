@@ -4,14 +4,12 @@ class User < ActiveRecord::Base
 
  validates :name, :email, presence: true
 
- serialize :skills
-
  belongs_to :location
  belongs_to :industry
  belongs_to :availability
 
- has_many :userskills
- has_many :skills, :through => :userskills
+ has_many :users_skills, class_name: UsersSkill
+ has_many :skills, :through => :users_skills
 
  belongs_to :role
 

@@ -72,7 +72,7 @@ attr_reader :mentees
   end
 
   def update
-   
+ 
     @industries = Industry.all
     @skills = Skill.all
     @avails = Availability.all
@@ -83,8 +83,8 @@ attr_reader :mentees
       redirect_to user_path(current_user)
     else
       @user = current_user
-      skills = params["user"]["skill_id"]
-      @user.update(skill_id: skills) 
+       skills = params["user"]["skill_ids"]
+       @user.skill_ids = skills
       @user.update(profile_params)
     end
     
@@ -101,6 +101,7 @@ attr_reader :mentees
 
   def profile_params
     params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :img_url, :fun_fact, :interests)
+    
   end
 
   def user_is_current_user
