@@ -25,13 +25,14 @@ attr_reader :mentees
 
   def show
 
-    if current_user.id != params[:id].to_i
-      redirect_to user_path(current_user)
-      @user = current_user
-    else
-      @user = current_user
+  @user = User.find(params["id"])
+    # if current_user.id != params[:id].to_i
+    #   redirect_to user_path(current_user)
+    #   @user = current_user
+    # else
+    #   @user = current_user
       render :show 
-    end
+    # end
   end
 
   def new
@@ -55,14 +56,18 @@ attr_reader :mentees
   end
 
   def edit
-  
-    @user = current_user
-
     @industries = Industry.all
     @skills = Skill.all
     @avails = Availability.all
     @locations = Location.all
     @roles = Role.all
+
+    if current_user.id != params[:id].to_i
+      redirect_to user_path(current_user)
+      @user = current_user
+    else
+      @user = current_user
+   end
 
   end
 

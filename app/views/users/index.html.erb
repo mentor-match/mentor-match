@@ -1,8 +1,14 @@
+<ul>
+ <% @users.each do |user| %>
 
-<% @users.each do |user| %>
-
-<h4><%=  user.name  %></h4>
-<h4><%=  user.title %></h4>
-<h4><%=  user.industry_id %></h4>
+ <li>
+	<h4><%=  user.name  %> | <%=  user.title %> | <%=  user.industry.name %>
+	</h4>
+	<p><a href="/users/<%= user.id %>">See Profile</a></p>
+  </li>
 
 <% end %>
+
+</ul>
+
+

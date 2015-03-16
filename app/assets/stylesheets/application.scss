@@ -16,10 +16,16 @@
  body {
  	margin: 0 auto;
  	font-size: 100%;
+
  }
 
+.logo {
+  padding: 1em 1em;
+
+}
+
  nav {
-    padding: 1em 1em;
+    
        li {
           list-style: none;
           display: inline-block;
