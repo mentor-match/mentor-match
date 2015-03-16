@@ -1,1 +1,16 @@
-<h1>This is your profile <%=@user.name  %> </h1>
+<% if current_user.id == @user.id %>
+  <%= link_to "Edit", edit_user_url(current_user) %>
+  <% else %>
+  <a href="mailto: <%= @user.email %>"><div>Message</a></div>
+  <% end %>
+
+
+<h4>Name: <%= @user.name  %></h4>
+<p>Role: <%=@user.role.name  %> </p>
+<p>Industry: <%=@user.industry.name %> </p>
+<p>Title: <%=@user.title  %> </p>
+<p>Email: <%=@user.email %> </p>
+<p>Years experience: <%=@user.years_experience %></p>
+<p>Bio: <%=@user.bio %></p>
+<p>Fun fact: <%=@user.fun_fact %></p>
+<p>Interests: <%=@user.interests %></p>

@@ -25,16 +25,16 @@ def new
  end
 
  def update
-    industry = params["industry_id"].to_i
-    avail = params["availability_id"].to_i
-    skills = params["skill_id"]
-    s = skills.map do |x|
-        x.to_i
-      end
-    location = params["job_location_id"].to_i
+    # industry = params["industry_id"].to_i
+    # avail = params["availability_id"].to_i
+    # skills = params["skill_id"]
+    # s = skills.map do |x|
+    #     x.to_i
+    #   end
+    # location = params["job_location_id"].to_i
 
-    filter_results = User.where(availability_id: avail, industry_id: industry, skill_id: s, job_location_id: location)
-   binding.pry
+    # filter_results = User.where(availability_id: avail, industry_id: industry, skill_id: s, job_location_id: location)
+
      
    
      render :index

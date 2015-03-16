@@ -1,15 +1,14 @@
 class UsersController < ApplicationController
    # before_action :user_is_current_user, only: [:edit, :update, :show]
-attr_reader :mentees
   def mentees
     
-   @users = User.where(:role_id=> [ 2, 3])
+   @users = User.where(:role_id=> [ 5, 6])
    
     render :index
   end
 
   def mentors
-    @users = User.where(:role_id=> [ 1, 3])
+    @users = User.where(:role_id=> [ 4, 6])
 
     render :index
   end
@@ -31,7 +30,7 @@ attr_reader :mentees
     #   @user = current_user
     # else
     #   @user = current_user
-      render :show 
+
     # end
   end
 
