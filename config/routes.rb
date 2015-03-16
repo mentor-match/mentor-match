@@ -21,6 +21,11 @@ Rails.application.routes.draw do
     resources :filters, only: [:new, :create, :index, :show, :update]
 
   end
+
+  resources :auth, only: :index
+
+  get '/auth/callback' => "auth#show"
+
   # '/users/:id/filter' =>  'users#new_filter'
   #  '/users/:id/results' => 'users#show_filter'
 

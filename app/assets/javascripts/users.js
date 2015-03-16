@@ -1,4 +1,4 @@
-console.log("loaded")
+console.log("usersjs_connected")
 
 
 $("#change-password").on("click", function(){
