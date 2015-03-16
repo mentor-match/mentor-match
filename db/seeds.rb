@@ -25,13 +25,13 @@ Role.delete_all
     name: "Business",
   },
    {
-    name: "Information_technology",
+    name: "Information Technology",
   },
    {
-    name: "Tech",
+    name: "Technology",
   },
    {
-    name: "Public_relations",
+    name: "Public Relations",
   },
    {
     name: "Media",
@@ -40,7 +40,7 @@ Role.delete_all
     name: "Finance",
   },
     {
-    name: "Human_resources",
+    name: "Human Resources",
   },
   {
     name: "Marketing",

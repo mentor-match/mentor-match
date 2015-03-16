@@ -50,14 +50,13 @@
 <br>
 <br>
 
-<label for="user_skill">Skills: </label><br>
+<label for="users_skill">Skills: </label><br>
 	<% @skills.each do |s| %>
-		<input class="userSkill" multiple ="true" name="user[skill_id][]" type="checkbox" <%= "checked" if @user.skill_id == s.id %> value="<%= s.id %>">
-	<%= s.name %>
-</input>
+		<%= check_box_tag "user[skill_ids][]", s.id, @user.skills.include?(s) %>
+	<%= s.name %> 
+
 
 <br>
-
 <% end %>
 <br>
 <label>Availability: </label>
