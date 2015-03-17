@@ -26,7 +26,9 @@ Rails.application.routes.draw do
 
   get '/auth/callback' => "auth#show"
 
-  # '/users/:id/filter' =>  'users#new_filter'
+  get '/auth/profile', to: "auth#profile"
+
+ # '/users/:id/filter' =>  'users#new_filter'
   #  '/users/:id/results' => 'users#show_filter'
 
   
