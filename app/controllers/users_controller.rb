@@ -1,14 +1,15 @@
 class UsersController < ApplicationController
    # before_action :user_is_current_user, only: [:edit, :update, :show]
   def mentees
-    
-   @users = User.where(:role_id=> [ 5, 6])
+    role_ids = Role.where(name: ["both", "mentee"]).ids
+    @users = User.where(role_id: role_ids)
    
     render :index
   end
 
   def mentors
-    @users = User.where(:role_id=> [ 4, 6])
+    role_ids = Role.where(name: ["both", "mentor"]).ids
+    @users = User.where(:role_id: role_ids)
 
     render :index
   end
