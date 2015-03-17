@@ -1,8 +1,8 @@
 class AuthController < ApplicationController
 	def index
 		# remember to put these in your bash profile
-		# @@apikey = ENV["LINKEDIN_API_KEY"]
-		# @@secretkey = ENV["LINKEDIN_SECRET_KEY"]	
+		 @@apikey = ENV["LINKEDIN_API_KEY"]
+		 @@secretkey = ENV["LINKEDIN_API_SECRET_KEY"]	
 
    base_url = "https://www.linkedin.com/uas/oauth2/authorization?"
    @@state = SecureRandom.urlsafe_base64

@@ -31,7 +31,8 @@ gem "httparty"
 
  # Use for attaching avatar images
  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-
+#for security
+gem "figaro"
 # Use Unicorn as the app server
 # gem 'unicorn'
 group :development do
