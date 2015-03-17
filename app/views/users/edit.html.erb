@@ -1,7 +1,17 @@
 <h1>Edit Your Profile</h1>
 
 <h1>Hi <%= @user.name %>!</h1>
+<%= link_to "Grab profile picture and title from Linkedin", auth_index_url %> <br><br>
+
 <%= form_for(@user) do |f| %>
+
+<div>
+  <img name="user['img_url']" src=<% if @user.img_url %>
+  "<%= @user.img_url%>"
+  <% elsif $pic %>
+  "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">
+<% end %>
+</div>
 
 <label>What do you consider yourself?</label> <br>
 <select for="user_type" name="user[role_id]">

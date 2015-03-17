@@ -2,8 +2,7 @@ class AuthController < ApplicationController
 	def index
 		# remember to put these in your bash profile
 		# @@apikey = ENV["LINKEDIN_API_KEY"]
-		# @@secretkey = ENV["LINKEDIN_SECRET_KEY"]
-		
+		# @@secretkey = ENV["LINKEDIN_SECRET_KEY"]	
 
    base_url = "https://www.linkedin.com/uas/oauth2/authorization?"
    @@state = SecureRandom.urlsafe_base64
@@ -43,17 +42,22 @@ class AuthController < ApplicationController
 
 	def profile
 	
-  response = HTTParty.get("https://api.linkedin.com/v1/people/~:(id,num-connections,picture-url)?format=json",
+  response = HTTParty.get("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,headline,picture-url)?format=json",
 
      headers: {
 					"authorization" => 'Bearer' + session["access_token"]
 				}
-
-
-
    	)
-	
- 	binding.pry
+
+   pic = response["pictureUrl"]
+   title = response["headline"]
+   user = current_user
+
+   user.update(img_url:  pic, title: title)
+   
+     	binding.pry
+	  redirect_to edit_user_url(current_user)
+ 
 	end
 
 end
