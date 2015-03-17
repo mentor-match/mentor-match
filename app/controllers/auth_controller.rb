@@ -54,8 +54,7 @@ class AuthController < ApplicationController
    user = current_user
 
    user.update(img_url:  pic, title: title)
-   
-     	binding.pry
+
 	  redirect_to edit_user_url(current_user)
  
 	end
