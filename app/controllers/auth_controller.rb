@@ -3,8 +3,7 @@ class AuthController < ApplicationController
 		# remember to put these in your bash profile
 		# @@apikey = ENV["LINKEDIN_API_KEY"]
 		# @@secretkey = ENV["LINKEDIN_SECRET_KEY"]
-		@@apikey = '78r82wkjtgtcp9'
-		@@secretkey = 'R0s34X4zUbVsMEr3'
+		
 
    base_url = "https://www.linkedin.com/uas/oauth2/authorization?"
    @@state = SecureRandom.urlsafe_base64
