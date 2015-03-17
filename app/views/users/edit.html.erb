@@ -8,7 +8,7 @@
 <div>
   <img name="user['img_url']" src=<% if @user.img_url %>
   "<%= @user.img_url%>"
-  <% elsif $pic %>
+  <% else %>
   "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">
 <% end %>
 </div>
