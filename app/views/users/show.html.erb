@@ -3,7 +3,9 @@
   <% else %>
   <a href="mailto: <%= @user.email %>"><div>Message</a></div>
   <% end %>
-
+<div>
+  <img src="<%= @user.img_url %>">
+</div>
 
 <h4>Name: <%= @user.name  %></h4>
 <p>Role: <%=@user.role.name  %> </p>
