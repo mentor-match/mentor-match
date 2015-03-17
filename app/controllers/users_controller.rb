@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def mentors
     role_ids = Role.where(name: ["both", "mentor"]).ids
-    @users = User.where(:role_id: role_ids)
+    @users = User.where(role_id: role_ids)
 
     render :index
   end
