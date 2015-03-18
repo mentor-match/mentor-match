@@ -8,19 +8,13 @@
 </head>
 <body>
 
-  <div class="logo">
-         <%= link_to "MentorMatch", root_path %>
-      </div>
-      
+  <%=link_to image_tag("MentorMatch_Logo.png", alt: "MentorMatch", class: "logo clearfix" ), root_path%>
+
 	<% if current_user %>
 
-    <nav class="logged-in clearfix">
+    <nav class="logged-in ">
 
-      <ul class="clearfix">
-        <li>
-          <%= button_to "Log Out", session_url, method: "delete" %>
-        </li>
-
+      <ul>
         <li>
           <%= link_to "Profile", user_url(current_user) %>
         </li>
@@ -33,7 +27,9 @@
         <li>
           <%= link_to "Filter Search",  '/users/:user_id/filters/new' %>
         </li>
-        
+         <li>
+          <%= button_to "Sign Out", session_url, method: "delete" %>
+        </li>
       </ul>
     </nav>
 
