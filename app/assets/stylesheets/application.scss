@@ -22,6 +22,7 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   padding: 2em 2em;
  	font-size: 100%;
   font-family: $main-font, light;
+  letter-spacing: .05em;
   width: 1000;
  }
 
@@ -29,6 +30,7 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
    width: 6.78em;
    height: 6.78em;
    float: left;
+   margin-bottom: 2em;
 }
 
 .clearfix:after {
@@ -37,23 +39,29 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   content: "";
 }
 
+
  nav {
     float: right;
-    margin-bottom: 29px;
+    margin-top: 2.8em;
        li {
+          font-weight: bold;
           list-style: none;
           display: inline-block;
-        a {
-           text-decoration: none;
-           color: #grey;
-     
-           a:active {
-             color: red;
+          a {
+            text-decoration: none;
+            color: black;
           }
-         }
-       }
-   }
+          a:hover {
+            color: red;
+          }
+        }
+  }
 
+hr {
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
 
 #change-password {
 	 margin-top: 10px;
@@ -68,19 +76,23 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
 
 }
 
-#figures {
+/*#figures {
   margin-top: 120px;
   margin-right: 3.52em;
   margin-left: 3.52em;
+}*/
+#figs {
+  width: 100%;
+  height: 50%;
 }
-.stickFigure {
+/*.stickFigure {
   float: left;
   height: 20.30em;
   width: 10.20em;
   list-style: none;
   padding-left: 10px;
 
-}
+}*/
 
 #linkedin-pic {
       border-radius: 100%;
