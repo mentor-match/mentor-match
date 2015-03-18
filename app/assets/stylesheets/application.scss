@@ -33,6 +33,21 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
    margin-bottom: 2em;
 }
 
+.company-name {
+    margin-top: 2.8em;
+    float: left;
+       li {
+          list-style: none;
+          display: inline-block;
+  }
+}
+
+.signup {
+  background-position: 100%;
+  text-align: right;
+  font-weight: bold;
+}
+
 .clearfix:after {
   clear: both;
   display: block;
@@ -44,7 +59,6 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
     float: right;
     margin-top: 2.8em;
        li {
-          font-weight: bold;
           list-style: none;
           display: inline-block;
           a {
