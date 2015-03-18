@@ -1,13 +1,13 @@
 <nav class="logged-out">
   <ul style="margin-bottom:2em;">
-    <li style="font-weight: normal; float:right;"><%= link_to "about" %></li>
-    <li style="font-weight: normal; margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials" %></li>
-    <li style="font-weight: normal; float: right"><%= link_to "contact" %></li>
+    <li style= "float:right;"><%= link_to "about" %></li>
+    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials" %></li>
+    <li style="float: right"><%= link_to "contact" %></li>
   </ul>
 
-  <ul style="background-position: 100%; text-align:right;"> 
+  <ul class="signup"> 
     <li> <%= link_to "sign up", new_user_url %></li>
-    <li style="font-weight:normal;"> | </li>
+    <li> | </li>
     <li> <%= link_to "log in", new_session_url %></li>
   </ul>
 </nav>
