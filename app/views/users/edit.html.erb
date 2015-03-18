@@ -6,11 +6,18 @@
 <%= form_for(@user) do |f| %>
 
 <div>
-  <img name="user['img_url']" src=<% if @user.img_url %>
-  "<%= @user.img_url%>"
+  <img src=<% if @user.img_url %>
+ 	 "<%= @user.img_url%>"
   <% else %>
-  "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">
+ 	 "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">
 <% end %>
+
+	<input type="hidden" 	name="user[img_url]" value=<% if @user.img_url %>
+		"<%= @user.img_url %>"
+			<% else %>
+		"https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png"
+		<% end %>
+	>
 </div>
 
 <label>What do you consider yourself?</label> <br>
