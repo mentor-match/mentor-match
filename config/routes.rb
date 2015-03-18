@@ -28,6 +28,12 @@ Rails.application.routes.draw do
 
   get '/auth/profile', to: "auth#profile"
 
+  get '/about', to: "users#about"
+
+  get '/testimonials', to: "users#testimonials"
+
+  get '/contact', to: "users#contact"
+
  # '/users/:id/filter' =>  'users#new_filter'
   #  '/users/:id/results' => 'users#show_filter'
 
