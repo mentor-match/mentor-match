@@ -85,6 +85,15 @@ class UsersController < ApplicationController
     render :show
   end
 
+  def about
+  end
+
+  def contact
+  end
+
+  def testimonials
+  end
+
 
   private
 

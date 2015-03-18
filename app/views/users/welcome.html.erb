@@ -1,31 +1,22 @@
 <nav class="logged-out">
   <ul style="margin-bottom:2em;">
-    <li style= "float:right;"><%= link_to "about" %></li>
-    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials" %></li>
-    <li style="float: right"><%= link_to "contact" %></li>
+    <li style= "float:right;"><%= link_to "about", "/about" %></li>
+    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
+    <li style="float: right"><%= link_to "contact", "/contact" %></li>
   </ul>
 
-  <ul class="signup"> 
-    <li> <%= link_to "sign up", new_user_url %></li>
-    <li> | </li>
-    <li> <%= link_to "log in", new_session_url %></li>
-  </ul>
+ 
 </nav>
-
-
 <hr>
+
+
+
+<p id="slogan">Mentor Match connects mentors and mentees within your organization.</p>
 
 <%= image_tag("stick_figures.png", alt: "stick figures", class: "clearfix", id: "figs")%>
 
+<ul class="login-blocks">
+  <li><%= link_to "SIGN UP", new_user_url %></li>
+  <li><%= link_to "LOG IN", new_session_url %></li>
+</ul>
 
-<!-- <section id="figures">
-  <hr>
-  <ul class="clearfix" >
-    <li> <%= image_tag("Stick Figure_Grey.png",class: "stickFigure") %></li>
-    <li> <%= image_tag("Stick Figure_Grey.png",class: "stickFigure") %></li>
-    <li> <%= image_tag("Stick Figure_Salmon.png",class: "stickFigure") %></li>
-    <li> <%= image_tag("Stick Figure_Grey.png",class: "stickFigure") %></li>
-    <li> <%= image_tag("Stick Figure_Salmon.png",class: "stickFigure" ) %></li>
-    <li> <%= image_tag("Stick Figure_Grey.png",class: "stickFigure") %></li>
-  </ul>
-</section> -->

@@ -1,0 +1,16 @@
+<nav class="logged-out">
+  <ul style="margin-bottom:2em;">
+    <li style= "float:right;"><%= link_to "about", "/about" %></li>
+    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
+    <li style="float: right"><%= link_to "contact", "/contact" %></li>
+  </ul>
+
+  <ul class="signup"> 
+    <li> <%= link_to "sign up", new_user_url %></li>
+    <li> | </li>
+    <li> <%= link_to "log in", new_session_url %></li>
+  </ul>
+</nav>
+<hr>
+
+<h1>TESTIMONIALS</h1>
