@@ -1,10 +1,19 @@
+
+<section class="profile">
+
 <% if current_user.id == @user.id %>
   <%= link_to "Edit", edit_user_url(current_user) %>
   <% else %>
   <a href="mailto:<%=@user.email %>"><div>Message</a></div>
   <% end %>
 
-  <img id="linkedin-pic" src="<%= @user.img_url %>">
+<div>
+  <img id="linkedin-pic" src=<% if @user.img_url %>
+  "<%= @user.img_url%>"
+  <% else %>
+  "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">>
+<% end %>
+</div>
 
 
 <h4>Name: <%= @user.name  %></h4>
@@ -16,3 +25,4 @@
 <p>Bio: <%=@user.bio %></p>
 <p>Fun fact: <%=@user.fun_fact %></p>
 <p>Interests: <%=@user.interests %></p>
+</section>
