@@ -6,8 +6,9 @@ class AuthController < ApplicationController
 
    base_url = "https://www.linkedin.com/uas/oauth2/authorization?"
    @@state = SecureRandom.urlsafe_base64
-    # for running locally - this also has to be updated on linkedin dev app:  @@redirect_url = "http://localhost:3000/auth/callback"
-      @@redirect_url = "https://mentor-match-ga.herokuapp.com/auth/callback"
+    # for running locally - this also has to be updated on linkedin dev app:  
+    @@redirect_url = "http://localhost:3000/auth/callback"
+      # @@redirect_url = "https://mentor-match-ga.herokuapp.com/auth/callback"
 
 
 		url = base_url + "response_type=code&client_id=#{@@apikey}&redirect_uri=" + @@redirect_url + "&state=" + @@state + "&scope=r_fullprofile"
