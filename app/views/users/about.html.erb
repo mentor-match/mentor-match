@@ -1,3 +1,9 @@
+<script>
+jQuery(function($) {
+$('.slider').sss();
+});
+</script>
+
 <nav class="logged-out">
   <ul style="margin-bottom:2em;">
     <li style= "float:right;"><%= link_to "about", "/about" %></li>
@@ -11,25 +17,33 @@
     <li> <%= link_to "log in", new_session_url %></li>
   </ul>
 </nav>
+
 <hr>
 
-<section class="about">
-<p>Mentormatch is a super simple and effective solution for businesses to quickly and cost-effectively implement a mentorship program within their organization.</p> 
+<div class="slider">
+  <%= image_tag("profile_screenshot.png", alt: "profile") %>
+  <%= image_tag("mentors_screenshot.png", alt: "mentors") %>
+  <%= image_tag("mentees_screenshot.png", alt: "mentees") %>
+</div>
 
-<p>Simply sign up, enter some information about yourself and you're set to go!</p>
+<section class="about clearfix">
 
-<p>25% of all large US companies have mentorship programs and the demand is growing as studies continue to prove their vast benefits. In fact, over 70% of Fortune 500 companies have implemented mentorship programs!</p>
+  <p>Mentormatch is a super simple and effective solution for businesses to quickly and cost-effectively implement a mentorship program within their organization.</p> 
 
-<p>Studies show that mentorship programs radically increases employee satisfaction, retention and leadership abilities.</p>
+  <p>Simply sign up, enter some information about yourself and you're set to go!</p>
 
-<p>Some proven benefits are:</p>
+  <p>25% of all large US companies have mentorship programs and the demand is growing as studies continue to prove their vast benefits. In fact, over 70% of Fortune 500 companies have implemented mentorship programs!</p>
 
-<ul>
-	<li>25% higher retention rate for employees who have engaged in company-sponsored mentoring.</li>
-	<li>The ROI for companies that invest in coaching is 7 times the initial investment.</li>
-	<li>Organizations with excellent cultural support for coaching have 13% stronger business results.</li>
-	<li>250% higher productivity in organizations with a career development program.</li>
-</ul>
+  <p>Studies show that mentorship programs radically increases employee satisfaction, retention and leadership abilities.</p>
 
-<p>Contact us for more information and pricing. Or sign up for a free 3-month trial today!</p>
+  <p>Some proven benefits are:</p>
+
+  <ul>
+  	<li>25% higher retention rate for employees who have engaged in company-sponsored mentoring.</li>
+  	<li>The ROI for companies that invest in coaching is 7 times the initial investment.</li>
+  	<li>Organizations with excellent cultural support for coaching have 13% stronger business results.</li>
+  	<li>250% higher productivity in organizations with a career development program.</li>
+  </ul>
+
+  <p>Contact us for more information and pricing. Or sign up for a free 3-month trial today!</p>
 </section>
