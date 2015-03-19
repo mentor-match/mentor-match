@@ -1,28 +1,56 @@
-<h1>SIGN UP</h1>
+<nav class="logged-out">
+  <ul style="margin-bottom:2em;">
+    <li style= "float:right;"><%= link_to "about", "/about" %></li>
+    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
+    <li style="float: right"><%= link_to "contact", "/contact" %></li>
+  </ul>
+</nav>
 
+<hr>
+
+<nav class="login-signup">
+  <ul>
+      <li>SIGN UP</li>
+  </ul>
+</nav>
+
+<section class="form-signup">
   <%= form_for @user do |f| %>
-  <%= f.text_field :name, placeholder: "name" %>
-  <%= f.text_field :email, placeholder: "your email" %>
+    <%= f.text_field :name, placeholder: "NAME: Jane Smith" %>
+    
+    <br>
+
+    <%= f.text_field :email, placeholder: "EMAIL: hi@hello.com" %>
+    
     <br/>
-  <%= f.password_field :password, placeholder: "password" %>
+
+    <%= f.password_field :password, placeholder: "PASSWORD:" %>
+    
     <br/>
-  <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
+
+    <%= f.password_field :password_confirmation, placeholder: "CONFIRM PASSWORD:" %>
+    
     <br/>
-    <label>What do you consider yourself?</label>
 
     <select for="user_type" name="user[role_id]">
+      <option value="" disabled selected style="display:none;">ROLE:</option>
       <% @roles.each do |r| %>
-        <option class="user_type" type="text" value="<%= r.id %>"><%= r.name %></option>
+        <option class="user_type" type="text" value="<%= r.id %>"><%= r.name.capitalize %></option>
       <% end %>
     </select>
 
-    <label>What is your current industry? </label>
+    <br>
 
     <select for="user_type" name="user[industry_id]">
+      <option value="" disabled selected style="display:none;">INDUSTRY:</option>
       <% @industries.each do |i| %>
       <option class="user_type" type="text" value="<%=i.id%>"><%= i.name %></option>
       <% end %>
     </select>
+    
+    <br>
 
-    <%= f.submit "Submit" %>
+    <%= f.submit "SUBMIT" %>
   <% end %>
+
+</section>

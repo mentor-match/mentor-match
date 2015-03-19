@@ -104,10 +104,16 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
             color: black;
           }
           a:hover {
-            color: red;
+            color: #ee145b;
           }
         }
   }
+
+.login-signup {
+  float:none;
+  color: #ee145b;
+}
+
 
 hr {
   width: 100%;
@@ -155,6 +161,7 @@ hr {
 
 .about {
   margin: 10px 15%;
+  font-family: Garamond;
   li {
     list-style-type: circle;
     margin-left: 3em; 

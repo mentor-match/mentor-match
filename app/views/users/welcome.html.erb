@@ -1,4 +1,4 @@
-<nav class="logged-out">
+  <nav class="logged-out">
   <ul style="margin-bottom:2em;">
     <li style= "float:right;"><%= link_to "about", "/about" %></li>
     <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
@@ -9,14 +9,14 @@
 </nav>
 <hr>
 
-
-
 <p id="slogan">Mentor Match connects mentors and mentees within your organization.</p>
 
 <%= image_tag("stick_figures.png", alt: "stick figures", class: "clearfix", id: "figs")%>
 
 <ul class="login-blocks">
-  <li><%= link_to "SIGN UP", new_user_url %></li>
-  <li><%= link_to "LOG IN", new_session_url %></li>
+  <a href="/users/new"><li>SIGN UP</li></a>
+  <a href="/session/new"><li>LOG IN</li></a>
+  <!-- <%= link_to "SIGN UP", new_user_url %> -->
+<!-- <li><%= link_to "LOG IN", new_session_url %></li> -->
 </ul>
 
