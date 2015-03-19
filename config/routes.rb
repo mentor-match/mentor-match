@@ -34,6 +34,8 @@ Rails.application.routes.draw do
 
   get '/contact', to: "users#contact"
 
+  get 'forgot', to: "users#forgot"
+
  # '/users/:id/filter' =>  'users#new_filter'
   #  '/users/:id/results' => 'users#show_filter'
 

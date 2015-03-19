@@ -1,10 +1,27 @@
-<h1>Log in to MentorMatch!</h1>
+<nav class="logged-out">
+  <ul style="margin-bottom:2em;">
+    <li style= "float:right;"><%= link_to "about", "/about" %></li>
+    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
+    <li style="float: right"><%= link_to "contact", "/contact" %></li>
+  </ul>
+</nav>
 
-  <%= form_for @user, as: :session, url: session_url do |f| %>
-  <%= f.text_field :email, placeholder: "your email" %>
-    <br/>
-  <%= f.password_field :password, placeholder: "password" %>
-    <br/>
+<hr>
 
-    <%= f.submit "Log in" %>
-  <% end %>
+<nav class="login-signup">
+	<ul>
+		<li>LOG IN</li>
+	</ul>
+</nav>
+
+<section class="form-login">
+	<%= form_for @user, as: :session, url: session_url do |f| %>
+	<%= f.text_field :email, placeholder: "EMAIL: hi@hello.com" %>
+	    <br/>
+	<%= f.password_field :password, placeholder: "PASSWORD:" %>
+	<br/>
+	<%= f.submit "LOG IN" %>
+	<br>
+	<% end %>
+	<button><a href="/forgot">I FORGOT MY PASSWORD</a></button>
+</section>

@@ -94,6 +94,9 @@ class UsersController < ApplicationController
   def testimonials
   end
 
+  def forgot
+  end
+
 
   private
 

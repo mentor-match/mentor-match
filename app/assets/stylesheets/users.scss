@@ -1,3 +1,51 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.form-signup {
+	text-align: center;
+	margin-top: 1em;
+		input {
+			height: 2em;
+		}
+		input:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
+		input[type="text"], [type="password"] {
+			font-family: Garamond;
+			width: 33%;
+			text-align: center;
+			margin: .5em;
+			border: 3px solid black;
+			border-radius: 7px;
+		}
+		input[type="submit"] {
+			color: white;
+			margin-top: 5em;
+			border: 2px solid #ee145b;
+			border-radius: 50px;
+			background-color: #ee145b;
+			cursor: pointer;
+		}
+		button, a {
+			margin-top: .5em;
+			color: white;
+			background-color: #53585F;
+			border: 2px solid #53585F;
+			border-radius: 50px;
+			text-decoration: none;
+		}
+		select {
+			width: 150px;
+			margin-top: 1em;
+			color: white;
+			font-family: Garamond;
+			background-color: black;
+		}
+		option[type="text"] {
+			color: white;
+			font-family: Garamond;
+		}
+
+}
