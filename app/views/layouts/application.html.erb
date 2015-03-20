@@ -8,39 +8,55 @@
 </head>
 <body>
 
-  <%=link_to image_tag("MentorMatch_Logo.png", alt: "MentorMatch", class: "logo clearfix" ), root_path%>
-  <ul class="company-name">
-  <li>mentor match</li>
+<%=link_to image_tag("MentorMatch_Logo.png", alt: "MentorMatch", class: "logo clearfix" ), root_path%>
+
+<ul class="company-name">
+  <li><%= link_to("mentor match", root_path) %></li>
+</ul>
+
+<nav class="logged-out">
+  <ul style="margin-bottom:2em;">
+    <li style= "float:right;"><%= link_to "about", "/about" %></li>
+    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
+    <li style="float: right"><%= link_to "contact", "/contact" %></li>
   </ul>
 
-
-	<% if current_user %>
-
-    <nav class="logged-in ">
-
-      <ul>
-        <li>
-          <%= link_to "Profile", user_url(current_user) %>
-        </li>
-        <li>
-           <%= link_to "mentee", "/users/mentees" %>
-        </li>
-         <li>
-            <%= link_to "mentors", "/users/mentors" %>
-        </li>
-        <li>
-          <%= link_to "Filter Search",  '/users/:user_id/filters/new' %>
-        </li>
-         <li>
-          <%= button_to "Sign Out", session_url, method: "delete" %>
-        </li>
-      </ul>
-    </nav>
-
+  <% if current_user == nil %>
+    <ul class="signup"> 
+      <li> <%= link_to "sign up", new_user_url %></li>
+      <li> | </li>
+      <li> <%= link_to "log in", new_session_url %></li>
+    </ul>
+  <% else %>
+    <ul class="signup"> 
+      <li> <%= link_to "sign out", session_url, method: "delete" %></li>
+    </ul>
   <% end %>
+</nav>
+
+<hr>
+
+<% if current_user %>
+  <nav class="logged-in clearfix">
+    <ul>
+      <li>
+        <%= link_to "mentors", "/users/mentors" %>
+      </li>
+      <li>
+        <%= link_to "mentees", "/users/mentees" %>
+      </li>
+      <li>
+        <%= link_to "profile", user_url(current_user) %>
+      </li>
+<!--       <li>
+        <%= link_to "Filter Search",  '/users/:user_id/filters/new' %>
+      </li> -->
+    </ul>
+  </nav>
+<% end %>
   
 
- <%= yield %>
+<%= yield %>
 
 <!-- <pre> session.to_hash.to_yaml </pre> -->
  

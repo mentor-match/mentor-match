@@ -13,13 +13,11 @@ class SessionsController < ApplicationController
 
   def create
     # login the user, then redirect to content
-
     @user = User.find_by(email: session_params[:email])
 
     if @user && @user.authenticate(session_params[:password])
-     login!(@user)
-    
-         redirect_to user_path(@user)
+      login!(@user)
+      redirect_to user_path(@user)
     else
       render :new
     end
@@ -27,7 +25,7 @@ class SessionsController < ApplicationController
 
   def destroy
     logout!
-    redirect_to new_session_url
+    redirect_to root_path
   end
 
   private
