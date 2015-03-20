@@ -27,7 +27,7 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   font-weight: lighter;
   margin-bottom: 40px;
   border-color: #454545;
- }
+}
 
 .logo {
    width: 6.78em;
@@ -40,10 +40,17 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
     margin-top: 2.8em;
     margin-left: 0.5em;
     float: left;
-       li {
-          list-style: none;
-          display: inline-block;
-  }
+      li {
+        list-style: none;
+        display: inline-block;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          a:hover {
+            color: #ee145b;
+          }
+      }
 }
 
 .signup {
@@ -109,6 +116,11 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
           }
         }
   }
+
+.logged-in {
+  float:left;
+  margin-bottom: 2%;
+}
 
 .login-signup {
   float:none;

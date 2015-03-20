@@ -2,12 +2,13 @@
 
 
 .main {
+  clear: both;
   font-family: $bod-font;
-  margin-top: 17%;
   width: 60%;
   height: 100%;
   margin-left: 16%;
   margin-right: 16%;
+  border-top: 100px;
 
    span {
    	 font-weight: bold;
@@ -36,6 +37,7 @@
 
   .profile-left {	
 	float: left;
+  margin-left: 20%;
 
   }
 
@@ -86,14 +88,6 @@
 	border-radius: 5px;
 	text-align: center;
 }
-
-
-
-
-
-
-
-
 
 
 
