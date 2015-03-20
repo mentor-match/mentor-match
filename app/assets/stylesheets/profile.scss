@@ -82,11 +82,15 @@
 }
 
    .editOrContactButton{
-	padding: 0.25em 0.25em;
-	background-color: pink;
-	display: inline-block;
-	border-radius: 5px;
-	text-align: center;
+  	padding: 0.5em 0.5em;
+  	background-color:#ee145b;
+  	display: inline-block;
+  	border-radius: 10px;
+  	text-align: center;
+    font-family: $main-font;
+      a {
+         color: white;
+      }
 }
 
 

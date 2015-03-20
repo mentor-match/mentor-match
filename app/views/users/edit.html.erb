@@ -47,9 +47,9 @@
 </select>
 
 <label>Location: </label>
-<select for="user_location" name="user[job_location_id]">
+<select for="user_location" name="user[location_id]">
 	<%  @locations.each do |l| %>
-		<option  class="user_availability"  <%= "selected" if @user.job_location_id == l.id %> type="type" value="<%= l.id %>"><%= l.city %></option>
+		<option  class="user_availability"  <%= "selected" if @user.location_id == l.id %> type="type" value="<%= l.id %>"><%= l.city %></option>
 	<% end %>
 </select>
 
