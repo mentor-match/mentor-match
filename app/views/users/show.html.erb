@@ -11,6 +11,7 @@
 	<p><span>TITLE:</span> <%=@user.title  %> </p>
 	<p id="email"><span>EMAIL:</span> <a href="mailto:<%=@user.email %>"><%=@user.email %> </a></p>
 	<p><span>YEARS EXPERIENCE: <%=@user.years_experience %></p>
+	<p><span>LOCATION:</span>	 <%=@user.location.city %></p>
   </section>
 
   <section class="profile-right">
@@ -37,7 +38,7 @@
 
   <div class="editOrContactButton">
 		<% if current_user.id == @user.id %>
-		<%= link_to "Edit", edit_user_url(current_user) %>
+		<%= link_to "EDIT", edit_user_url(current_user) %>
 		<% else %>
 		<a href="mailto:<%=@user.email %>">CONTACT</a>
 		<% end %>

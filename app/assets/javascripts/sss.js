@@ -106,3 +106,12 @@ $.fn.sss = function(options) {
 
 };
 })(jQuery, window, document);
+
+
+
+jQuery(function($) {
+   
+$('.slider').sss();
+});
+
+
