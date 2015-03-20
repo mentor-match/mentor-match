@@ -6,29 +6,42 @@
 	<img id="linkedin-pic" src="<%= @user.img_url %>">
 	</div>
 
-	<p><span>Role:</span> <%=@user.role.name  %> </p>
-	<p><span>Industry:</span> <%=@user.industry.name %> </p>
-	<p><span>Title:</span> <%=@user.title  %> </p>
-	<p id="email"><span>Email:</span> <a href="mailto:<%=@user.email %>"><%=@user.email %> </a></p>
-	<p><span>Years experience: <%=@user.years_experience %></p>
+	<p><span>ROLE:</span> <%=@user.role.name  %> </p>
+	<p><span>IINDUSTRY:</span> <%=@user.industry.name %> </p>
+	<p><span>TITLE:</span> <%=@user.title  %> </p>
+	<p id="email"><span>EMAIL:</span> <a href="mailto:<%=@user.email %>"><%=@user.email %> </a></p>
+	<p><span>YEARS EXPERIENCE: <%=@user.years_experience %></p>
   </section>
 
   <section class="profile-right">
   	<article id="bio">
-	<p><span>Bio:</span> <%=@user.bio %></p>
+			<p><span>BIO:</span> <%=@user.bio %></p>
 	</article>
-	<article id="fun-fact">
-	<p><span>Fun fact:</span> <%=@user.fun_fact %></p>
-	</article>
-	<article id="interests">
-	<p><span>Interests:</span> <%=@user.interests %></p>
+	<article id="skills">
+		<span>SKILLS:</span>
+		<% @user.skills.each do |s| %>
+		    <span class="skill"><%= s.name %></span>
+	   <% end %>
 	</article>
 
-	<% if current_user.id == @user.id %>
-	<%= link_to "Edit", edit_user_url(current_user) %>
-	<% else %>
-	<a href="mailto:<%=@user.email %>"><span>Message</a></span>
-	<% end %>
+	<article id="interests">
+		<p><span>INTERESTS:</span> <%=@user.interests %></p>
+	</article>
+	<article id="fun-fact">
+		<p><span>FUN FACT:</span> <%=@user.fun_fact %></p>
+	</article>
+	
+	<article id="availability">
+		<p><span>AVAILABILITY:</span> <%=@user.availability.name %></p>
+	</article>
+
+  <div class="editOrContactButton">
+		<% if current_user.id == @user.id %>
+		<%= link_to "Edit", edit_user_url(current_user) %>
+		<% else %>
+		<a href="mailto:<%=@user.email %>">CONTACT</a>
+		<% end %>
+	 </div>
   </section>
 
 </div>
