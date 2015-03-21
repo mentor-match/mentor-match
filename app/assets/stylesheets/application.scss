@@ -119,7 +119,18 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
 
 .logged-in {
   float:left;
-  margin-bottom: 2%;
+  margin-top: 10px;
+  margin-bottom: 3%;
+  font-size: 1em;
+}
+
+.logged-out {
+  margin-left: 1em; 
+  float: right;
+  margin-bottom: 2em;
+     li {
+        margin-left: 2em; 
+   }
 }
 
 .login-signup {
