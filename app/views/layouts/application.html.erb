@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>MentorMatch</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -23,11 +23,11 @@
 <% end %>
 
 
-<nav class="logged-out">
-  <ul style="margin-bottom:2em;">
-    <li style= "float:right;"><%= link_to "about", "/about" %></li>
-    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
-    <li style="float: right"><%= link_to "contact", "/contact" %></li>
+<nav>
+  <ul class="logged-out">
+    <li><%= link_to "about", "/about" %></li>
+    <li><%= link_to "testimonials", "/testimonials" %></li>
+    <li><%= link_to "contact", "/contact" %></li>
   </ul>
 
   <% if current_user == nil %>

@@ -1,6 +1,5 @@
 <h1>Edit Your Profile</h1>
 
-<h1>Hi <%= @user.name %>!</h1>
 <%= link_to "Grab profile picture and title from Linkedin", auth_index_url %> <br><br>
 
 <%= form_for(@user) do |f| %>
@@ -97,7 +96,6 @@
   </div>
 </div>   
 <br/>
-  <%= f.submit "Submit Edit" %>
+  <%= f.submit "Submit" %>
   <% end %>
 
-  <%= javascript_include_tag 'users' %>
