@@ -2,9 +2,10 @@
 
 
 .main {
+  position: relative;
   clear: both;
   font-family: $bod-font;
-  width: 70%;
+  width: 60%;
   height: 100%;
   margin-left: 16%;
   margin-right: 16%;
@@ -24,9 +25,13 @@
 		    content: '.';
 	}
 
-  .profile-left { 
-    float: left;
-    margin-left: 10%;
+  .profile-left {
+  position: absolute; 
+  left: 0;
+    /*width: 30%;*/
+    /*float: left;*/
+   margin-left: 8%;
+    margin-right: 5%;
      p {
       margin-bottom: 10px;
      }
@@ -34,12 +39,14 @@
   }
 
  .profile-right {
-  float: right; 
-  margin-right: 10%;
+  position: absolute; 
+  right: 0;
+  /*width: 30%;*/
+  /*float: right; */
+  margin-right: 8%; 
   margin-top: 8px;
 
   }
-  
 
   article {
    	padding: 8px;
@@ -64,7 +71,7 @@
 }
 
 .imageAndName {
-  margin-right: 5px;
+  margin-right: 300px;
   text-align: center;
 	h4 {
 	 font-size: 1.65em;
