@@ -11,7 +11,9 @@
 	<p><span>INDUSTRY: </span> <%=@user.industry.name %> </p>
 	<p><span>TITLE: </span> <%=@user.title  %> </p>
 	<p><span>YEARS EXPERIENCE: </span><%=@user.years_experience %></p>
-	<p><span>LOCATION: </span><%=@user.location.city %></p>
+  <p><span>LOCATION: </span><%if @user.location %>
+    <%= @user.location.city %>
+    <% end %></p>
 	<p id="email"><span>EMAIL: </span> <a href="mailto:<%=@user.email %>"><%=@user.email %> </a></p>
   </section>
 
@@ -34,7 +36,9 @@
 	</article>
 	
 	<article id="availability">
-		<p><span>AVAILABILITY:</span> <%=@user.availability.name %>.</p>
+		<p><span>AVAILABILITY:</span> <%if @user.availability %>
+    <%=@user.availability.name %>.</p>
+    <% end %>
 	</article>
 
   <div class="editOrContactButton">
