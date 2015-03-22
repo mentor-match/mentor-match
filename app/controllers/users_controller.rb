@@ -38,7 +38,7 @@ class UsersController < ApplicationController
 
   def create
    
-    @user = User.new( user_params )
+    @user = User.new(user_params)
     @roles = Role.all
 
     if @user.save
@@ -106,7 +106,7 @@ class UsersController < ApplicationController
   end
 
   def profile_params
-    params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :img_url, :fun_fact, :interests)
+    params.require(:user).permit(:password, :password_confirmation, :location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :img_url, :fun_fact, :interests)
     
   end
 

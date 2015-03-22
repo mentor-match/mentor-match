@@ -28,6 +28,15 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   margin-bottom: 40px;
   border-color: #454545;
 }
+a {
+    color: inherit;
+    margin-bottom: 0px;
+  }
+
+hr {
+  width: 100%;
+  margin-top: 3em;
+}
 
 .logo {
    width: 6.78em;
@@ -57,13 +66,14 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   background-position: 100%;
   margin-bottom: 0.5em;
   text-align: right;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 #slogan {
   text-align: center;
   font-style: italic;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .login-blocks {
@@ -136,13 +146,7 @@ $bod-font: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
 .login-signup {
   float:none;
   color: #ee145b;
-}
-
-
-hr {
-  width: 100%;
-  margin-top: 3em;
-/*  margin-bottom: .25em;*/
+  font-size: 0.83em;
 }
 
 #change-password {
@@ -171,4 +175,5 @@ hr {
     margin-left: 3em; 
   }
 }
+
 

@@ -4,10 +4,11 @@
 .main {
   clear: both;
   font-family: $bod-font;
-  width: 60%;
+  width: 70%;
   height: 100%;
   margin-left: 16%;
   margin-right: 16%;
+  padding-top: 15px;
   border-top: 100px;
 
    span {
@@ -20,12 +21,29 @@
    }
 
 	span.skill:last-child:after {
-		    content: '';
+		    content: '.';
 	}
 
-   article {
+  .profile-left { 
+    float: left;
+    margin-left: 10%;
+     p {
+      margin-bottom: 10px;
+     }
+
+  }
+
+ .profile-right {
+  float: right; 
+  margin-right: 10%;
+  margin-top: 8px;
+
+  }
+  
+
+  article {
    	padding: 8px;
-   	border-radius: 8px;
+   	border-radius: 15px;
    	border: 2px solid #454545;
    	width: 295px;
    	margin-bottom: 10px;
@@ -33,40 +51,25 @@
    	 p {
    	 	font-style: italic;
    	 }
+       .skill {
+          font-style: italic;
+          font-weight: normal;
+       }
    }
 
-  .profile-left {	
-	float: left;
-  margin-left: 20%;
-
-  }
-
- .profile-right {
-  float: right;	
-  width: 50%;
-  margin-top: 8px;
-
-
- 	}
- 	
-	 #bio {
+ #bio {
 	 	 height: 140px;
 
 	 }
-
-	 p {
-	 	 padding: 0px;
-	 	 margin-top: 0px;
-		 	 .skill {
-	        font-size: 1em;
-	   }
-	 	}
 }
 
 .imageAndName {
+  margin-right: 5px;
   text-align: center;
 	h4 {
 	 font-size: 1.65em;
+
+
  }
 	#linkedin-pic {
    border-radius: 100%;
@@ -81,18 +84,24 @@
 	height: 15px;
 }
 
-   .editOrContactButton{
-  	padding: 0.5em 0.5em;
+.editOrContactButton{
+  	padding: 0.5em 1em 0.25em 1em;
+    text-align: center;
+    font-family: $main-font;
   	background-color:#ee145b;
   	display: inline-block;
   	border-radius: 10px;
-  	text-align: center;
-    font-family: $main-font;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
       a {
          color: white;
       }
+}
+
+.skillsAndInterests{
+  height: 75px;
 }
 
 

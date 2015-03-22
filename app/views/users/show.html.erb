@@ -6,26 +6,26 @@
 	<img id="linkedin-pic" src="<%= @user.img_url %>">
 	</div>
 
-	<p><span>ROLE:</span> <%=@user.role.name  %> </p>
-	<p><span>IINDUSTRY:</span> <%=@user.industry.name %> </p>
-	<p><span>TITLE:</span> <%=@user.title  %> </p>
-	<p id="email"><span>EMAIL:</span> <a href="mailto:<%=@user.email %>"><%=@user.email %> </a></p>
-	<p><span>YEARS EXPERIENCE: <%=@user.years_experience %></p>
-	<p><span>LOCATION:</span>	 <%=@user.location.city %></p>
+	<p><span>ROLE: </span> <%=@user.role.name  %> </p>
+	<p><span>INDUSTRY: </span> <%=@user.industry.name %> </p>
+	<p><span>TITLE: </span> <%=@user.title  %> </p>
+	<p><span>YEARS EXPERIENCE: </span><%=@user.years_experience %></p>
+	<p><span>LOCATION: </span><%=@user.location.city %></p>
+	<p id="email"><span>EMAIL: </span> <a href="mailto:<%=@user.email %>"><%=@user.email %> </a></p>
   </section>
 
   <section class="profile-right">
   	<article id="bio">
 			<p><span>BIO:</span> <%=@user.bio %></p>
 	</article>
-	<article id="skills">
+	<article class="skillsAndInterests">
 		<span>SKILLS:</span>
 		<% @user.skills.each do |s| %>
 		    <span class="skill"><%= s.name %></span>
 	   <% end %>
 	</article>
 
-	<article id="interests">
+	<article class="skillsAndInterests">
 		<p><span>INTERESTS:</span> <%=@user.interests %></p>
 	</article>
 	<article id="fun-fact">
@@ -33,7 +33,7 @@
 	</article>
 	
 	<article id="availability">
-		<p><span>AVAILABILITY:</span> <%=@user.availability.name %></p>
+		<p><span>AVAILABILITY:</span> <%=@user.availability.name %>.</p>
 	</article>
 
   <div class="editOrContactButton">
