@@ -2,8 +2,10 @@
  <% @users.each do |user| %>
 	<li>
 		<a href="/users/<%= user.id %>">
-			<img src="<%= user.img_url %>"> <span class="mentor-text"><span><%= user.name  %><br><%=  user.title %><br><%=  user.location %><br><span style="font-style: italic"><%= user.years_experience %> year(s) experience</span></span></span>
+			<img src="<%= user.img_url %>"> <span class="mentor-text"><span><%= user.name  %><br><%=  user.title %><br><%= user.location.city if user.location %>
+				<br><span style="font-style: italic"><%= user.years_experience %> year(s) experience</span></span></span>
 		</a>
+		
 	</li>
 <% end %>
 </ul>
