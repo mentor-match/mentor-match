@@ -137,13 +137,13 @@ end
 
 [
   {
-  name: "mentor"
+  name: "Mentor"
 },
   {
-  name: "mentee"
+  name: "Mentee"
 },
   {
-  name: "both"
+  name: "Both"
 }
 ].each do |i|
   Role.create(i)

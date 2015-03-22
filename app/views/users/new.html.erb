@@ -1,12 +1,3 @@
-<nav class="logged-out">
-  <ul style="margin-bottom:2em;">
-    <li style= "float:right;"><%= link_to "about", "/about" %></li>
-    <li style="margin-right: 1em; margin-left: 1em; float: right"><%= link_to "testimonials", "/testimonials" %></li>
-    <li style="float: right"><%= link_to "contact", "/contact" %></li>
-  </ul>
-</nav>
-
-<hr>
 
 <nav class="login-signup">
   <ul>
@@ -16,7 +7,8 @@
 
 <section class="form-signup">
   <%= form_for @user do |f| %>
-    <%= f.text_field :name, placeholder: "NAME: Jane Smith" %>
+
+    <%= f.text_field :name, placeholder: "NAME: full name" %>
     <br>
     <%= f.text_field :email, placeholder: "EMAIL: hi@hello.com" %>
     <br/>

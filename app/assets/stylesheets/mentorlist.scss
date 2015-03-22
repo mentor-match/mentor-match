@@ -1,11 +1,14 @@
 @import "typography";
 
+
 .user-grid {
-	list-style: none;
+	/*commented out styling that is already in the reset.css sheeet- sofia*/
+	/*list-style: none;*/
 	font-size: 0px;
 	text-align: center;
-	margin: 0;
-	padding: 0;
+	margin-top: 5%;
+/*	margin: 0;
+	padding: 0;*/
 	/*margin-left: -2.5%;  should match li left margin */
 	li {
 		display: inline-block;

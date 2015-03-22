@@ -1,14 +1,14 @@
 class UsersController < ApplicationController
    # before_action :user_is_current_user, only: [:edit, :update, :show]
   def mentees
-    role_ids = Role.where(name: ["both", "mentee"]).ids
+    role_ids = Role.where(name: ["Both", "Mentee"]).ids
     @users = User.where(role_id: role_ids)
    
     render :index
   end
 
   def mentors
-    role_ids = Role.where(name: ["both", "mentor"]).ids
+    role_ids = Role.where(name: ["Both", "Mentor"]).ids
     @users = User.where(role_id: role_ids)
 
     render :index
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
 
   def create
    
-    @user = User.new( user_params )
+    @user = User.new(user_params)
     @roles = Role.all
 
     if @user.save
@@ -111,7 +111,7 @@ class UsersController < ApplicationController
   end
 
   def profile_params
-    params.require(:user).permit(:password, :password_confirmation, :job_location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :img_url, :fun_fact, :interests)
+    params.require(:user).permit(:password, :password_confirmation, :location_id, :availability_id, :role_id, :bio, :name, :title, :email, :years_experience, :industry_id, :img_url, :fun_fact, :interests)
     
   end
 
