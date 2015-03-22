@@ -1,103 +1,113 @@
-<h1>Edit Your Profile</h1>
+<div class="main">
 
-<h1>Hi <%= @user.name %>!</h1>
-<%= link_to "Grab profile picture and title from Linkedin", auth_index_url %> <br><br>
+	<h1>EDIT</h1>
 
-<%= form_for(@user) do |f| %>
-
-<div>
-  <img src=<% if @user.img_url %>
- 	 "<%= @user.img_url%>"
-  <% else %>
- 	 "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">
-<% end %>
-
-	<input type="hidden" 	name="user[img_url]" value=<% if @user.img_url %>
-		"<%= @user.img_url %>"
-			<% else %>
-		"https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png"
-		<% end %>
-	>
-</div>
-
-<label>What do you consider yourself?</label> <br>
-<select for="user_type" name="user[role_id]">
-	<% @roles.each do |r| %>
-		<option class="user_type" type="text"  <%= "selected" if @user.role.id == r.id %> value="<%= r.id%>"><%= r.name %></option>
+	<%= link_to "Grab profile picture and title from Linkedin", auth_index_url %> <br><br>
+<section class="form-edit-profile">
+	<%= form_for(@user) do |f| %>
+<section class="profile-left">
+	<div class="imageAndName">
+	  <img id="linkedin-pic" src=<% if @user.img_url %>
+	 	 "<%= @user.img_url%>"
+	  <% else %>
+	 	 "https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png">
 	<% end %>
-</select>
-<br>
-<label>Name: </label>
-<input type="text" name="user[name]" value='<%= @user.name %>'>
 
-<label>Title: </label>
-<input type="text" value="<%= @user.title %>" name="user[title]">
+		<input type="hidden" 	name="user[img_url]" value=<% if @user.img_url %>
+			"<%= @user.img_url %>"
+				<% else %>
+			"https://www.skillfullyaware.com/wp-content/uploads/2014/10/profile_avatar_default.png"
+			<% end %>
+		>
+	</div>
 
-<label>Email: </label>
-<input type="text" name="user[email]" value='<%= @user.email %>'>
+	<label>NAME: </label>
+	<input type="text" name="user[name]" value='<%= @user.name %>'>
 <br><br>
+	<label>TITLE: </label>
+	<input type="text" value="<%= @user.title %>" name="user[title]">
+<br><br>
+	<label>EMAIL: </label>
+	<input type="text" name="user[email]" value='<%= @user.email %>'>
+	<br><br>
+<!-- 	<label>LINKEDIN URL: </label> -->
 
-<label>Industry: </label>
-<select id="user_industry" for="user_industry" name="user[industry_id]">
-  <% @industries.each do |i| %>
-     <option class="user_industry" <%= "selected" if @user.industry.id == i.id %> value="<%=i.id%>">
-     	<%= i.name %>
+	<select id="user_role" for="user_role" name="user[role_id]">
+		<option value="" disabled selected style="display:none;">ROLE:</option>
+		<% @roles.each do |r| %>
+     <option class="user_role" <%= "selected" if @user.role.id == r.id %> value="<%=r.id%>">
+    <%= r.name.capitalize %>
      </option>
-  <% end %>
-</select>
-
-<label>Location: </label>
-<select for="user_location" name="user[location_id]">
-	<%  @locations.each do |l| %>
-		<option  class="user_availability"  <%= "selected" if @user.location_id == l.id %> type="type" value="<%= l.id %>"><%= l.city %></option>
-	<% end %>
-</select>
-
-<label>Years of Experience: </label>
-<input type="number" value="<%= @user.years_experience %>" name="user[years_experience]" min="0" max="50">
+	  <% end %>
+	</select>
+<br><br>
+	<select id="user_industry" for="user_industry" name="user[industry_id]">
+		<option value="" disabled selected style="display:none;">INDUSTRY:</option>
+	  <% @industries.each do |i| %>
+	     <option class="user_industry" <%= "selected" if @user.industry.id == i.id %> value="<%=i.id%>">
+	     	<%= i.name %>
+	     </option>
+	  <% end %>
+	</select>
 
 <br><br>
-<input type="text" size="100" name="user[bio]" value="<%= @user.bio %>" placeholder="Insert a short description of yourself. Where did you grow up? What is your professional background? What are passionate about? Don't be shy!">
 
+	<select id="user_location" for="user_location" name="user[location_id]">
+		<option value="" disabled selected style="display:none;">LOCATION:</option>
+		<%  @locations.each do |l| %>
+			<option  class="user_availability"  <%= "selected" if @user.location_id == l.id %> type="type" value="<%= l.id %>"><%= l.city %></option>
+		<% end %>
+	</select>
 <br><br>
-<input type="text" size="100" name="user[fun_fact]" value="<%= @user.fun_fact %>" placeholder="Fun fact about yourself">
 
-<br><br>
-<input type="text" size="100" name="user[interests]" value="<%= @user.interests %>" placeholder="Interests">
-<br>
-<br>
+		<label>YEARS OF EXPERIENCE: </label>
+		<input type="number" value="<%= @user.years_experience %>" name="user[years_experience]" min="0" max="50">
+</section>
 
-<label for="users_skill">Skills: </label><br>
-	<% @skills.each do |s| %>
-		<%= check_box_tag "user[skill_ids][]", s.id, @user.skills.include?(s) %>
-	<%= s.name %> 
+<section class="profile-right">
+	<input type="text" size="100" name="user[bio]" value="<%= @user.bio %>" placeholder="Insert a short description of yourself. Where did you grow up? What is your professional background? What are passionate about? Don't be shy!">
 
+	<br><br>
+	<input type="text" size="100" name="user[fun_fact]" value="<%= @user.fun_fact %>" placeholder="Fun fact about yourself">
+	<br><br>
+	<input type="text" size="100" name="user[interests]" value="<%= @user.interests %>" placeholder="Interests">
+	<br><br>
 
-<br>
-<% end %>
-<br>
-<label>Availability: </label>
-<select for="availability" name="user[availability_id]">
-	<% @avails.each do |a| %>
-	<option  class="user_availability" type="type" <%= "selected" if @user.availability_id == a.id %> value="<%= a.id %>">
-		<%= a.name %>
-	</option>
+	<label for="users_skill">Skills: </label>
 	<br>
+		<% @skills.each do |s| %>
+			<%= check_box_tag "user[skill_ids][]", s.id, @user.skills.include?(s) %>
+		<%= s.name %> <br>
 	<% end %>
-</select>
-<br>  
+	<br>
 
-<div id="change-password">
-	Change password
- <!--  <label>Change password: </label> -->
- <div class="password-fields">
-  <%= f.password_field :password, placeholder: "new password" %>
-    <br/>
-  <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
-  </div>
-</div>   
-<br/>
-  <%= f.submit "Submit Edit" %>
-  <% end %>
+	<select for="availability" name="user[availability_id]">
+		<option value="" disabled selected style="display:none;">AVAILABILITY: </option>
+		<% @avails.each do |a| %>
+		<option  class="user_availability" type="type" <%= "selected" if @user.availability_id == a.id %> value="<%= a.id %>">
+			<%= a.name %>
+		</option>
+		<br>
+		<% end %>
+	</select>
+	<br>
 
-  <%= javascript_include_tag 'users' %>
+	<div id="change-password">
+		Change password
+		<div class="password-fields">
+	  <%= f.password_field :password, placeholder: "new password" %>
+	    <br><br>
+	  <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
+	  </div>
+	</div>  
+	<br>
+	  <section class="edit-buttons">
+	  <%= f.submit "SUBMIT" %>
+	 	<% end %>
+			<button><%= link_to "CANCEL", user_url(current_user) %></button>
+			<button><%= link_to "DELETE ACCOUNT", user_url(current_user) %></button>
+		</section>
+</section>
+</section>
+
+<%= javascript_include_tag 'users' %>
