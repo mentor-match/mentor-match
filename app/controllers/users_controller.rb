@@ -85,6 +85,11 @@ class UsersController < ApplicationController
     render :show
   end
 
+  def delete
+    user = User.find(parms["id"])
+    user.destroy
+  end
+
   def about
   end
 

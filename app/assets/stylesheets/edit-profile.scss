@@ -1,0 +1,53 @@
+.edit-buttons {
+	input[type="submit"] {
+	color: white;
+	background-color: #ee145b;
+	border: 2px solid #ee145b;
+	border-radius: 50px;
+	cursor: pointer;
+	}
+	button, a {
+	color: white;
+	background-color: #53585F;
+	border: 2px solid #53585F;
+	border-radius: 50px;
+	text-decoration: none;
+	}
+}
+
+.form-edit-profile {
+
+	input:focus::-webkit-input-placeholder {
+	color: transparent;
+	}
+	input[type="text"], [type="password"] {
+	font-family: Garamond;
+	width: 60%;
+	}
+	.edit-buttons {
+		input[type="submit"] {
+		color: white;
+		background-color: #ee145b;
+		border: 2px solid #ee145b;
+		border-radius: 50px;
+		cursor: pointer;
+		}
+		button, a {
+		color: white;
+		background-color: #53585F;
+		border: 2px solid #53585F;
+		border-radius: 50px;
+		text-decoration: none;
+		}
+	}
+	select {
+	width: 150px;
+	color: white;
+	font-family: Garamond;
+	background-color: black;
+	}
+	option[type="text"] {
+	color: white;
+	font-family: Garamond;
+	}
+}

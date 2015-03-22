@@ -7,20 +7,14 @@
 
 <section class="form-signup">
   <%= form_for @user do |f| %>
+
     <%= f.text_field :name, placeholder: "NAME: full name" %>
-    
     <br>
-
     <%= f.text_field :email, placeholder: "EMAIL: hi@hello.com" %>
-    
     <br/>
-
     <%= f.password_field :password, placeholder: "PASSWORD:" %>
-    
     <br/>
-
     <%= f.password_field :password_confirmation, placeholder: "CONFIRM PASSWORD:" %>
-    
     <br/>
 
     <select for="user_type" name="user[role_id]">
