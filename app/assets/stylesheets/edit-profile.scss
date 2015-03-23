@@ -15,9 +15,8 @@
 	}
 }
 
-
 #linkedin-auth {
-	border-radius: 5px;
+	border-radius: 50px;
 	margin-left: 3.5em;
 	border: 1px solid #ee145b;
 	color: white;
@@ -25,9 +24,7 @@
 }
 
 /*#background {
-	background-image: url("Notebook_smaller.png");
-	width: 600px;
-	height: 600px;
+	background: url("Notebook_smaller.png");
 }*/
 
 .login-signup-edit {
@@ -85,23 +82,6 @@
 		float: right;
 	}
 
-
-	.edit-buttons {
-		input[type="submit"] {
-		color: white;
-		background-color: #ee145b;
-		border: 2px solid #ee145b;
-		border-radius: 50px;
-		cursor: pointer;
-		}
-		button, a {
-		color: white;
-		background-color: #53585F;
-		border: 2px solid #53585F;
-		border-radius: 50px;
-		text-decoration: none;
-		}
-	}
 	select {
 	width: 165px;
 	color: white;

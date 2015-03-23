@@ -1,6 +1,5 @@
 @import "typography";
 
-
 .main {
   clear: both;
   font-family: $bod-font;
@@ -76,6 +75,7 @@
  }
 	#linkedin-pic {
    border-radius: 100%;
+   border: 1px solid black;
    width: 12.79em;
    height: 12.79em;
    margin-top: 15px;
@@ -105,7 +105,7 @@
 }
 
 .skillsAndInterests{
-  height: 75px;
+  height: 100px;
 }
 
 
