@@ -1,14 +1,13 @@
-<nav class="login-signup">
+<nav class="login-signup-edit">
   <ul>
-      <li>EDIT</li>
+      <li>EDIT PROFILE</li>
   </ul>
 </nav>
 
 <div class="main">
 
-
-
 	<%= link_to "Grab profile picture and title from Linkedin", auth_index_url %> <br><br>
+<section id="background">
 <section class="form-edit-profile">
 	<%= form_for(@user) do |f| %>
 <section class="profile-left">
@@ -42,7 +41,7 @@
 		<option value="" disabled selected style="display:none;">ROLE:</option>
 		<% @roles.each do |r| %>
      <option class="user_role" <%= "selected" if @user.role.id == r.id %> value="<%=r.id%>">
-    <%= r.name.capitalize %>
+    <%= r.name %>
      </option>
 	  <% end %>
 	</select>
@@ -66,27 +65,6 @@
 	</select>
 <br><br>
 
-		<label>YEARS OF EXPERIENCE: </label>
-		<input type="number" value="<%= @user.years_experience %>" name="user[years_experience]" min="0" max="50">
-</section>
-
-<section class="profile-right">
-	<input type="text" size="100" name="user[bio]" value="<%= @user.bio %>" placeholder="Insert a short description of yourself. Where did you grow up? What is your professional background? What are passionate about? Don't be shy!">
-
-	<br><br>
-	<input type="text" size="100" name="user[fun_fact]" value="<%= @user.fun_fact %>" placeholder="Fun fact about yourself">
-	<br><br>
-	<input type="text" size="100" name="user[interests]" value="<%= @user.interests %>" placeholder="Interests">
-	<br><br>
-
-	<label for="users_skill">Skills: </label>
-	<br>
-		<% @skills.each do |s| %>
-			<%= check_box_tag "user[skill_ids][]", s.id, @user.skills.include?(s) %>
-		<%= s.name %> <br>
-	<% end %>
-	<br>
-
 	<select for="availability" name="user[availability_id]">
 		<option value="" disabled selected style="display:none;">AVAILABILITY: </option>
 		<% @avails.each do |a| %>
@@ -96,16 +74,52 @@
 		<br>
 		<% end %>
 	</select>
+<br><br>
+
+		<label id="label">&nbsp;&nbsp;Years Experience: </label>
+		<input type="number" value="<%= @user.years_experience %>" name="user[years_experience]" min="0" max="50">
+</section>
+
+<section class="profile-right">
+	<label>Bio: </label>
+	<textarea id="edit-bio" name="user[bio]" placeholder="Insert a short description of yourself. Where did you grow up? What is your professional background? What are passionate about? Don't be shy!"><%= @user.bio %></textarea>
+
+	<br><br>
+	<label>Fun Fact: </label>
+	<textarea id="edit-funfact" name="user[fun_fact]" placeholder="Fun fact about yourself"><%= @user.fun_fact %></textarea>
+	<br><br>
+	<label>Interests: </label>
+	<textarea id="edit-interests" name="user[interests]" placeholder="Interests"><%= @user.interests %></textarea>
+	<br><br>
+<section class="checkbox-container clearfix">
+	<section class="checkbox-left">
+	<label for="users_skill">Skills: </label>
+	<br>
+	<% @skills[0..5].each do |s| %>
+		<%= check_box_tag "user[skill_ids][]", s.id, @user.skills.include?(s) %>
+		<%= s.name %> <br>
+	<% end %>
+	</section>
+	<section class="checkbox-right">
+	<% @skills[6..12].each do |s| %>
+		<%= check_box_tag "user[skill_ids][]", s.id, @user.skills.include?(s) %>
+		<%= s.name %> <br>
+	<% end %>
+	</section>
+</section>
 	<br>
 
-	<div id="change-password">
+
+	<br>
+
+<!-- 	<div id="change-password">
 		Change password
 		<div class="password-fields">
 	  <%= f.password_field :password, placeholder: "new password" %>
 	    <br><br>
 	  <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
 	  </div>
-	</div>  
+	</div>  --> 
 	<br>
 	  <section class="edit-buttons">
 	  <%= f.submit "SUBMIT" %>
@@ -115,4 +129,4 @@
 		</section>
 </section>
 </section>
-
+</section>
