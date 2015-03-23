@@ -6,7 +6,7 @@
 
 <div class="main">
 
-	<%= link_to "Grab profile picture and title from Linkedin", auth_index_url %> <br><br>
+	<%= link_to "Grab profile picture and title from Linkedin", auth_index_url, :id => "linkedin_auth" %> <br><br>
 <section id="background">
 <section class="form-edit-profile">
 	<%= form_for(@user) do |f| %>
@@ -125,7 +125,7 @@
 	  <%= f.submit "SUBMIT" %>
 	 	<% end %>
 			<button><%= link_to "CANCEL", user_url(current_user) %></button>
-			<button><%= link_to "DELETE ACCOUNT", user_url(current_user) %></button>
+			<button><%= link_to "DELETE ACCOUNT", @user, method: "delete", data: {confirm: "Are you sure you want to delete this user?"} %></button>
 		</section>
 </section>
 </section>
