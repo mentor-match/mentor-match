@@ -1,17 +1,17 @@
 @import "typography";
 
-.main {
+/*.main {
   font-family: $bod-font;
   margin-top: 3%;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 3%;
-}
+  width: 100%;
+  margin-left: 10%;
+}*/
 
 .testimonial {
-	clear: both;
-	width: 100%;
+	font-family: $bod-font;
+	width: 90%;
 	height: 400px;
+	margin-top: 8%;
 	margin-bottom: 5%;
 }
 
@@ -22,7 +22,6 @@
 	img {
 		max-height: 60%;
 		max-width: 60%;
-		margin-bottom: 1em;
 		border: 1px solid black;
 	}
 	h1 {
@@ -36,7 +35,7 @@
 
 .t-right {
 	float: right;	
-	width: 60%;
+	width: 58%;
 	margin-top: 8px;
 	.t {
 		font-style: italic;
