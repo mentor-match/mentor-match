@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
       login!(@user)
       redirect_to user_path(@user)
     else
-      render :new
+      redirect_to "/users/new"
     end
   end
 
