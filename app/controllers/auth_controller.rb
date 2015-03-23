@@ -41,7 +41,7 @@ class AuthController < ApplicationController
 
 			session["access_token"] = response["access_token"]
 			redirect_to "/auth/profile"
-			binding.pry
+
 		else
 			render :index
 		end
