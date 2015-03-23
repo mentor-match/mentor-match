@@ -1,3 +1,9 @@
+<% if params[:action] == "mentors" %>
+	<%= stylesheet_link_tag "mentorlist.css" %>
+<% else %>
+	<%= stylesheet_link_tag "menteelist.css" %>
+<% end %>
+
 <div class="m-list">
 	<ul class="user-grid">
 	<% @users.each do |user| %>
@@ -7,7 +13,7 @@
 					<img src="<%= user.img_url %>" height="180px" width="180px" alt="pic">
 						<figcaption>
 							<p>
-								<%= user.name %><br><%= user.title %><br><%= user.location.city if user.location %><br><%= user.years_experience %> year(s) experience
+								<%= user.name %><br><%= user.title %><br><%= user.location.city if user.location %><br>
 							</p>
 						</figcaption>
 				</figure>

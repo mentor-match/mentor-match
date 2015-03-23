@@ -1,0 +1,82 @@
+.m-list {
+	margin-top: 8%;
+}
+
+.user-grid {
+	margin: 1em auto;
+	max-width: 100%;
+	text-align: center;
+}
+
+.user-grid li {
+	border: 1px solid black;
+	border-radius: 50px;
+	display: inline-block;
+	margin: 1em;
+	width: 250px;
+}
+
+.user-grid figure {
+	height: 163px;
+	overflow: hidden;
+	position: relative;
+	width: 250;
+}
+
+.user-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 250px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.user-grid li:hover figcaption {
+	opacity: 1;
+}
+
+.user-grid img{
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+}
+
+.user-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.user-grid li:hover figcaption p {
+	font-size: .9em;
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+.user-grid figcaption {
+	background: rgba(238,20,91,0.6);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
