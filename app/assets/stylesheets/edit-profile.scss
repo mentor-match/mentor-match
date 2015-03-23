@@ -15,15 +15,68 @@
 	}
 }
 
-.form-edit-profile {
+/*#background {
+	background-image: url("Notebook_smaller.png");
+	width: 600px;
+	height: 600px;
+}*/
 
+.login-signup-edit {
+	margin-top: 6em;
+  float:none;
+  color: #ee145b;
+  font-size: 0.83em;
+}
+
+.form-edit-profile {
 	input:focus::-webkit-input-placeholder {
 	color: transparent;
 	}
-	input[type="text"], [type="password"] {
-	font-family: Garamond;
-	width: 60%;
+	textarea[id="edit-bio"] {
+		width: 30em;
+		height: 8em;
 	}
+	textarea[id="edit-funfact"], [id="edit-interests"] {
+		width: 30em;
+		height: 3em;
+	}
+	input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1
+	}
+	input[type="number"] {
+		color: white;
+		background-color: black;
+		border: 4px solid black;
+		border-bottom: 0px solid black;
+		border-left: 10px solid black;
+		border-right: 0px solid black;
+		width: 2.8em;
+		border-radius: 5px;
+	}
+	#label {
+		color: white;
+		background-color: black;
+		border-top: 4px solid black;
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+		border-right: 20px solid black;
+		border-radius: 5px;
+		font-size: 12px;
+	}
+
+	.checkbox-container {
+		margin-top: .6em;
+		width: 22em;
+	}
+	.checkbox-left {
+		float: left;
+	}
+	.checkbox-right {
+		margin-top: 1.2em;
+		float: right;
+	}
+
+
 	.edit-buttons {
 		input[type="submit"] {
 		color: white;
@@ -41,10 +94,11 @@
 		}
 	}
 	select {
-	width: 150px;
+	width: 165px;
 	color: white;
 	font-family: Garamond;
 	background-color: black;
+	border: 3px solid black;
 	}
 	option[type="text"] {
 	color: white;
