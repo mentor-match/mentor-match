@@ -1,0 +1,114 @@
+.main {
+  clear: both;
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+  max-width: 850px;
+  height: 100%;
+  margin-left: 16%;
+  margin-right: 16%;
+  padding-top: 15px;
+  border-top: 100px;
+}
+.main span {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.main span.skill:after {
+  content: ',';
+}
+
+.main span.skill:last-child:after {
+	content: '.';
+}
+
+.main .profile-left {
+  width: 35%;
+  float: left;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.main .profile-left p {
+  margin-bottom: 10px;
+}
+.main .profile-left p a {
+  text-decoration: underline;
+}
+.main .profile-left p a:hover {
+  color: #ee145b;
+}
+
+.main .profile-right { 
+  width: 35%;
+  float: right; 
+  margin-right: 10%; 
+  margin-top: 8px;
+}
+
+article {
+ 	padding: 8px;
+ 	border-radius: 15px;
+ 	border: 2px solid #454545;
+ 	width: 300px;
+ 	margin-bottom: 10px;
+}
+article p {
+  font-style: italic;
+}
+article .skill {
+  font-style: italic;
+  font-weight: normal;
+}
+
+#bio {
+	 	 height: 120px;
+}
+
+.imageAndName {
+  /*margin-right: 300px;*/
+  text-align: center;
+}
+.imageAndName #linkedin-pic {
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 12.79em;
+  height: 12.79em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.imageAndName h4 {
+  font-size: 1.65em;
+}
+
+#availability {
+	height: 15px;
+}
+
+.editOrContactButton{
+  	padding: 0.5em 1em 0.25em 1em;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  	background-color:#ee145b;
+  	display: inline-block;
+  	border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.editOrContactButton a {
+  color: white;
+}
+
+.skillsAndInterests{
+  height: 80px;
+}
+
+
+
+
+
+
+
+.logged-in li:nth-child(3n) a {
+  color: #ee145b;
+}

@@ -11,3 +11,4 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( sss.js)
 Rails.application.config.assets.precompile += %w( mentorlist.css)
 Rails.application.config.assets.precompile += %w( menteelist.css)
+Rails.application.config.assets.precompile += %w( profile.css)

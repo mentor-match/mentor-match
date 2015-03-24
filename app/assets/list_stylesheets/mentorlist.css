@@ -79,3 +79,7 @@
 	transition-delay: 100ms;
 	z-index: 100;
 }
+
+.logged-in li:first-child a {
+	color: #ee145b;
+}
