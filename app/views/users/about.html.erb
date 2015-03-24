@@ -1,13 +1,9 @@
-
-
-<!-- <div class="slider">
-  <%= image_tag("profile_screenshot.png", alt: "profile") %>
-  <%= image_tag("mentors_screenshot.png", alt: "mentors") %>
-  <%= image_tag("mentees_screenshot.png", alt: "mentees") %>
-</div> -->
-
 <div class="about-picture">
-  <%= image_tag("mentors_screenshot.png", alt: "profile") %>
+  <ul class="pics">
+    <li class="pic-one"><%= image_tag("mentors_screenshot.png", alt: "profile") %></li>
+    <li class="pic-two"><%= image_tag("mentees_screenshot.png", alt: "profile") %></li>
+    <li class="pic-three"><%= image_tag("profile_screenshot.png", alt: "profile") %></li>
+  </ul>
 </div>
 
 <section class="about clearfix">
@@ -33,11 +29,9 @@
 </section>
 
 
+<script>
+  $(".pic-one").show()
+  $(".pic-two").hide()
+  $(".pic-three").hide()
+</script>
 
-<!-- # <%= javascript_include_tag 'sss' %>
-
-# jQuery(function($) {
-   
-# $('.slider').sss();
-
-# }); -->
