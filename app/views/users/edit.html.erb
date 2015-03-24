@@ -87,14 +87,14 @@
 
 <section class="profile-right">
 	<label>Bio: </label>
-	<textarea id="edit-bio" name="user[bio]" placeholder="Insert a short description of yourself. Where did you grow up? What is your professional background? What are passionate about? Don't be shy!"><%= @user.bio %></textarea>
+	<textarea id="edit-bio" name="user[bio]" maxlength="300" placeholder="Insert a short description of yourself. Where did you grow up? What is your professional background? What are passionate about? Don't be shy!"><%= @user.bio %></textarea>
 
 	<br><br>
 	<label>Fun Fact: </label>
-	<textarea id="edit-funfact" name="user[fun_fact]" placeholder="Fun fact about yourself"><%= @user.fun_fact %></textarea>
+	<textarea id="edit-funfact" name="user[fun_fact]" maxlength="150" placeholder="Fun fact about yourself"><%= @user.fun_fact %></textarea>
 	<br><br>
 	<label>Interests: </label>
-	<textarea id="edit-interests" name="user[interests]" placeholder="Interests"><%= @user.interests %></textarea>
+	<textarea id="edit-interests" name="user[interests]" maxlength="150" placeholder="Interests"><%= @user.interests %></textarea>
 	<br><br>
 <section class="checkbox-container clearfix">
 	<section class="checkbox-left">
