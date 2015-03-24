@@ -23,9 +23,12 @@
 	background-color: #ee145b;
 }
 
-/*#background {
-	background: url("Notebook_smaller.png");
-}*/
+#background {
+	background: url("Notebook_1000x691.png");
+	background-repeat: no-repeat;
+	height: 691px;
+	width: 1000px;
+}
 
 .login-signup-edit {
 	margin-top: 6em;
