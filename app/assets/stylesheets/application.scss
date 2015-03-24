@@ -38,6 +38,64 @@ hr {
   margin-top: 3em;
 }
 
+.main {
+  clear: both;
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+  max-width: 850px;
+  height: 100%;
+  margin-left: 16%;
+  margin-right: 16%;
+  padding-top: 15px;
+  border-top: 100px;
+}
+.main span {
+  font-weight: bold;
+  font-style: normal;
+}
+.main span.skill:after {
+  content: ',';
+}
+.main span.skill:last-child:after {
+  content: '.';
+}
+.main .profile-left {
+  width: 35%;
+  float: left;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-bottom: 1em;
+}
+.main .profile-left p {
+  margin-bottom: 10px;
+}
+.main .profile-left p a {
+  text-decoration: underline;
+}
+.main .profile-left p a:hover {
+  color: #ee145b;
+}
+.main .profile-right { 
+  width: 35%;
+  float: right; 
+  margin-right: 10%; 
+  margin-top: 8px;
+}
+
+.imageAndName {
+  text-align: center;
+}
+.imageAndName #linkedin-pic {
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 12.79em;
+  height: 12.79em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.imageAndName h4 {
+  font-size: 1.65em;
+}
+
 .logo {
    width: 6.78em;
    height: 6.78em;
