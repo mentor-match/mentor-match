@@ -6,17 +6,15 @@
 
 <div class="main">
 
-<!-- 	<%= link_to "Grab profile picture and title from Linkedin", auth_index_url, :id => "linkedin_auth" %>  -->
-
-	<button id="linkedin-auth"><a href="/auth">Grab profile picture and title from Linkedin</a></button>
-
-		<br><br>
 <div id="background">
 
 <section class="form-edit-profile">
 	<%= form_for(@user) do |f| %>
 <section class="profile-left">
 	<div class="imageAndName">
+
+		<button id="linkedin-auth"><a href="/auth">Grab profile picture and title from Linkedin</a></button>
+	  
 	  <img id="linkedin-pic" src=<% if @user.img_url %>
 	 	 "<%= @user.img_url%>"
 	  <% else %>
