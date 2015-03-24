@@ -1,4 +1,4 @@
-.main {
+/*.main {
   clear: both;
   font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   max-width: 850px;
@@ -7,8 +7,8 @@
   margin-right: 16%;
   padding-top: 15px;
   border-top: 100px;
-}
-.main span {
+}*/
+/*.main span {
 	font-weight: bold;
 	font-style: normal;
 }
@@ -42,7 +42,7 @@
   float: right; 
   margin-right: 10%; 
   margin-top: 8px;
-}
+}*/
 
 article {
  	padding: 8px;
@@ -63,8 +63,7 @@ article .skill {
 	 	 height: 120px;
 }
 
-.imageAndName {
-  /*margin-right: 300px;*/
+/*.imageAndName {
   text-align: center;
 }
 .imageAndName #linkedin-pic {
@@ -77,7 +76,7 @@ article .skill {
 }
 .imageAndName h4 {
   font-size: 1.65em;
-}
+}*/
 
 #availability {
 	height: 15px;
@@ -102,10 +101,6 @@ article .skill {
 .skillsAndInterests{
   height: 80px;
 }
-
-
-
-
 
 
 
