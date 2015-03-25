@@ -34,7 +34,10 @@ Rails.application.routes.draw do
 
   get '/contact', to: "users#contact"
 
-  get 'forgot', to: "users#forgot"
+  get '/forgot', to: "users#forgot"
+
+  get 'users/:id/ziggeo', to: "users#ziggeo"
+
 
  # '/users/:id/filter' =>  'users#new_filter'
   #  '/users/:id/results' => 'users#show_filter'

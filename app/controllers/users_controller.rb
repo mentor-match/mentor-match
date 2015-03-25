@@ -98,6 +98,14 @@ class UsersController < ApplicationController
   def forgot
   end
 
+  def ziggeo
+    if current_user.id != params[:id].to_i
+      redirect_to user_path(current_user)
+    else
+      @user = current_user
+    end
+  end
+
 
   private
 

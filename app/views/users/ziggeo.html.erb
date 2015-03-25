@@ -1,0 +1,29 @@
+<head>
+			<link rel="stylesheet" href="//assets.ziggeo.com/css/ziggeo-betajs-player.min.css" />
+		<script src="//assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
+		<script>ZiggeoApi.token = "6898d551b0d0a5993a5c4caa78aa0dc9";</script>
+
+</head>
+
+<div class='main'>
+	<form method="POST" action="/users/:id" id="ziggeo-video">
+		<ziggeo ziggeo-tags="<%= @user.name %>"
+			ziggeo-limit=60
+			ziggeo-input_bind="videotoken"
+			ziggeo-form_accept="#ziggeo-video"
+		></ziggeo>
+		<input id="submit" type="submit">
+	</form>
+</div>
+
+
+<script>
+$("#submit").hide();
+ZiggeoApi.Events.on("submitted", function () {
+   $("#submit").show();
+});
+
+$(function() {
+var ziggeo = Ziggeo.new("6898d551b0d0a5993a5c4caa78aa0dc9","e1d00d7f8837127b92ce021c448d3fc5","de0d248bdb8132f2d78afb483430581a")
+});
+</script>
