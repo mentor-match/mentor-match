@@ -21,3 +21,12 @@ setInterval(function () {
 		$(".pic-three").fadeOut(600);
 	}
 }, 6000);
+
+
+
+// setInterval(function () {
+// 	$("li:gt(1)").css("display", "none");
+// 	$("li.first").insertAfter("li:last").toggle("clip", 100, function () {
+// 		$("li:eq(2)").toggle("scale", 100);
+// 	});
+// }, 6000);
